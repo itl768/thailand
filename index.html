@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thailand Core Memory Trip — 7 Day Journal</title>
+<title>Thailand Core Memory Trip — 6 Day Journal</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -412,9 +412,9 @@ footer{background:var(--ink); color:var(--paper); position:relative; padding-top
       <span>CMB → BKK → CMB · Boarding Pass No. 001</span>
     </div>
     <h1>Thailand<br><em>Core Memory</em> Trip</h1>
-    <p class="hero-sub">7 Days <span class="sep"></span> Krabi <span class="sep"></span> Phi Phi <span class="sep"></span> Bangkok <span class="sep"></span> Pattaya</p>
+    <p class="hero-sub">6 Days <span class="sep"></span> Krabi <span class="sep"></span> Phi Phi <span class="sep"></span> Bangkok <span class="sep"></span> Pattaya</p>
     <div class="hero-cards glass" style="border-radius:28px;">
-      <div class="hero-card"><div class="k"><i class="fa-regular fa-calendar"></i> Duration</div><div class="v">7 Days</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-regular fa-calendar"></i> Duration</div><div class="v">6 Days</div></div>
       <div class="hero-card"><div class="k"><i class="fa-solid fa-sack-dollar"></i> Budget</div><div class="v">~$4,500</div></div>
       <div class="hero-card"><div class="k"><i class="fa-solid fa-user-group"></i> Travelers</div><div class="v">4 People</div></div>
       <div class="hero-card"><div class="k"><i class="fa-regular fa-sun"></i> Best Season</div><div class="v">Nov – Mar</div></div>
@@ -1039,10 +1039,10 @@ const destinations = [
   { name:'Phi Phi Islands', badge:'Day 2', color:'var(--coral)', scene:'lagoon', galleryKey:'phi-phi', image:'assets/images/destinations/phi-phi.jpg',
     desc:'The postcard shot come to life — Maya Bay\'s cliffs, Pileh Lagoon\'s impossible blue, and a full day on the water by speedboat.',
     highlights:['Maya Bay','Pileh Lagoon','Snorkeling'], vibe:'Bucket-list high', time:'40 min by speedboat', weather:'31°C · Clear' },
-  { name:'Bangkok', badge:'Day 4 & 6', color:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/destinations/bangkok.jpg',
+  { name:'Bangkok', badge:'Day 3 & 5', color:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/destinations/bangkok.jpg',
     desc:'The capital\'s full sensory overload, in the best way — golden temples by day, Chao Phraya river cruises by night, and shopping malls that swallow whole afternoons.',
     highlights:['Chinatown street food','River dinner cruise','Siam shopping'], vibe:'Electric & endless', time:'1hr flight from Krabi', weather:'33°C · Humid' },
-  { name:'Pattaya', badge:'Day 5', color:'var(--teal-500)', scene:'neon', galleryKey:'pattaya', image:'assets/images/destinations/pattaya.jpg',
+  { name:'Pattaya', badge:'Day 4', color:'var(--teal-500)', scene:'neon', galleryKey:'pattaya', image:'assets/images/destinations/pattaya.jpg',
     desc:'A day-trip detour for beach clubs by afternoon and Walking Street\'s neon chaos by night — the loud, fun contrast to everywhere else on this trip.',
     highlights:['Sanctuary of Truth','Walking Street','Live music'], vibe:'Loud & fun', time:'2hr bus from Bangkok', weather:'32°C · Sunny' }
 ];
@@ -1071,17 +1071,9 @@ const days = [
       {icon:'fa-water',label:'Morning',items:['Speedboat pickup','Maya Bay','Pileh Lagoon','Viking Cave']},
       {icon:'fa-sun',label:'Afternoon',items:['Monkey Beach','Snorkeling stop','Buffet lunch on board']},
       {icon:'fa-cloud-sun',label:'Evening',items:['Return to Ao Nang','Traditional Thai massage','Dinner']},
-      {icon:'fa-moon',label:'Night',items:['Early rest — big day']} ],
-    transport:'Speedboat', hotel:'Ao Nang', cost:'$95 pp', walk:3 },
-  { n:3, city:'Railay Beach', mood:'Scenic & Slow', moodColor:'var(--teal-500)', scene:'cliffs', galleryKey:'railay', image:'assets/images/timeline/day-03-railay.jpg',
-    highlight:'Watching the sunset from Railay before the overnight leg to Bangkok.',
-    periods:[
-      {icon:'fa-ship',label:'Morning',items:['Long-tail boat to Railay','Railay Beach','Phra Nang Beach','Princess Cave']},
-      {icon:'fa-utensils',label:'Afternoon',items:['Lunch on Railay','Relax on the beach']},
-      {icon:'fa-cloud-sun',label:'Evening',items:['Sunset viewing','Return to Ao Nang','Dinner']},
       {icon:'fa-bus',label:'Night Transport',items:['VIP overnight bus OR domestic flight','Krabi → Bangkok']} ],
-    transport:'Long-tail boat + Overnight Bus/Flight', hotel:'En route', cost:'$60 pp', walk:2 },
-  { n:4, city:'Bangkok', mood:'Big City Energy', moodColor:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/timeline/day-04-bangkok.jpg',
+    transport:'Speedboat + Overnight Bus/Flight', hotel:'En route', cost:'$95 pp', walk:3 },
+  { n:3, city:'Bangkok', mood:'Big City Energy', moodColor:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/timeline/day-04-bangkok.jpg',
     highlight:'Dinner cruise down the Chao Phraya as the city lights flicker on.',
     periods:[
       {icon:'fa-hotel',label:'Morning',items:['Arrive Bangkok','Hotel check-in','Rest & freshen up']},
@@ -1089,7 +1081,7 @@ const days = [
       {icon:'fa-ship',label:'Evening',items:['Chao Phraya dinner cruise']},
       {icon:'fa-moon',label:'Night',items:['Riverside city lights, early night']} ],
     transport:'Grab + BTS', hotel:'Bangkok', cost:'$110 pp', walk:3 },
-  { n:5, city:'Pattaya', mood:'Loud & Fun', moodColor:'var(--coral)', scene:'neon', galleryKey:'pattaya', image:'assets/images/timeline/day-05-pattaya.jpg',
+  { n:4, city:'Pattaya', mood:'Loud & Fun', moodColor:'var(--coral)', scene:'neon', galleryKey:'pattaya', image:'assets/images/timeline/day-05-pattaya.jpg',
     highlight:'Walking Street after dark — the loudest, most alive two hours of the trip.',
     periods:[
       {icon:'fa-bus',label:'Morning',items:['Bus: Bangkok → Pattaya']},
@@ -1097,7 +1089,7 @@ const days = [
       {icon:'fa-music',label:'Evening',items:['Walking Street','Live music bars','Nightlife']},
       {icon:'fa-moon',label:'Night',items:['Late one — sleep in tomorrow']} ],
     transport:'Coach Bus', hotel:'Pattaya', cost:'$100 pp', walk:4 },
-  { n:6, city:'Bangkok', mood:'Shop & Unwind', moodColor:'var(--teal-500)', scene:'skyline', galleryKey:'bangkok', image:'assets/images/timeline/day-06-bangkok-shopping.jpg',
+  { n:5, city:'Bangkok', mood:'Shop & Unwind', moodColor:'var(--teal-500)', scene:'skyline', galleryKey:'bangkok', image:'assets/images/timeline/day-06-bangkok-shopping.jpg',
     highlight:'Rooftop dinner with the whole Bangkok skyline lit up below you.',
     periods:[
       {icon:'fa-bus',label:'Morning',items:['Return to Bangkok']},
@@ -1105,7 +1097,7 @@ const days = [
       {icon:'fa-spa',label:'Evening',items:['Thai massage','Rooftop dinner']},
       {icon:'fa-moon',label:'Night',items:['City views, last full night']} ],
     transport:'Grab + BTS', hotel:'Bangkok', cost:'$130 pp', walk:3 },
-  { n:7, city:'Departure', mood:'Bittersweet', moodColor:'var(--ink-soft)', scene:'airport', galleryKey:'departure', image:'assets/images/timeline/day-07-departure.jpg',
+  { n:6, city:'Departure', mood:'Bittersweet', moodColor:'var(--ink-soft)', scene:'airport', galleryKey:'departure', image:'assets/images/timeline/day-07-departure.jpg',
     highlight:'One last Thai iced coffee before heading to the airport.',
     periods:[
       {icon:'fa-mug-hot',label:'Morning',items:['Breakfast','Coffee','Relax']},
@@ -1117,7 +1109,7 @@ const transportModes = [
   {icon:'fa-plane', title:'Domestic & Intl. Flights', text:'Bangkok Airways / Thai Lion Air connect Krabi and Bangkok in ~1hr — faster than the overnight bus if the timing works for you.'},
   {icon:'fa-car', title:'Grab', text:'The default for short hops in Ao Nang, Bangkok and Pattaya. Fixed upfront pricing, no haggling, cashless option.'},
   {icon:'fa-train-subway', title:'BTS Skytrain', text:'Bangkok\'s elevated rail beats traffic entirely — best for Siam, Sukhumvit and Chinatown-adjacent stops.'},
-  {icon:'fa-ship', title:'Speedboats & Long-tails', text:'Speedboats for the Phi Phi day trip, traditional long-tail boats for Railay — both leave from Ao Nang pier.'},
+  {icon:'fa-ship', title:'Speedboats', text:'Speedboats for the Phi Phi day trip leave from Ao Nang pier — Maya Bay, Pileh Lagoon, and snorkeling in one full day on the water.'},
   {icon:'fa-bus', title:'VIP Overnight Bus', text:'A budget-friendly way to cover Krabi → Bangkok while you sleep. Reclining seats, blanket, onboard snacks.'},
   {icon:'fa-bus-simple', title:'Coach Bus (Bkk–Pattaya)', text:'Frequent, comfortable coaches from Ekkamai or Mo Chit — about 2 hours door to door.'},
   {icon:'fa-taxi', title:'Metered Taxi', text:'Fine for late-night rides when Grab surges — just confirm the meter is running before you set off.'},
