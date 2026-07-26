@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thailand Core Memory Trip — 7 Day Journal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root{
+  --ink:#12231e;
+  --ink-soft:#3b524a;
+  --paper:#faf6ec;
+  --paper-dim:#f1e9d6;
+  --paper-deep:#e9dfc4;
+  --teal-900:#0c2e2a;
+  --teal-800:#0f3c36;
+  --teal-700:#175247;
+  --teal-500:#2c7566;
+  --gold:#c69a4c;
+  --gold-soft:#e3c589;
+  --coral:#e2673f;
+  --coral-soft:#f2a382;
+  --line: rgba(18,35,30,.14);
+  --shadow-1: 0 1px 2px rgba(12,46,42,.06), 0 8px 24px rgba(12,46,42,.08);
+  --shadow-2: 0 20px 60px rgba(12,46,42,.18);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --ease: cubic-bezier(.16,.84,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Manrope',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;margin:0;font-weight:600;letter-spacing:-.01em;}
+p{margin:0;}
+button{font-family:inherit;cursor:pointer;}
+::selection{background:var(--gold-soft);color:var(--teal-900);}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}}
+
+.container{width:min(1200px, 92%); margin:0 auto;}
+.container-narrow{width:min(880px, 92%); margin:0 auto;}
+
+.eyebrow{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);display:inline-flex;align-items:center;gap:8px;font-weight:700;}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--coral);}
+.section-head{max-width:640px; margin-bottom:56px;}
+.section-head h2{font-size:clamp(2rem, 4vw, 3rem); margin-top:14px; line-height:1.05;}
+.section-head p{margin-top:16px; color:var(--ink-soft); font-size:1.05rem;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head.on-dark h2{color:var(--paper);}
+.section-head.on-dark p{color:rgba(250,246,236,.72);}
+.section-head.on-dark .eyebrow{color:var(--gold-soft);}
+.section-head.on-dark .eyebrow::before{background:var(--gold-soft);}
+
+section{position:relative;padding:120px 0;}
+@media (max-width:720px){section{padding:80px 0;}}
+
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .9s var(--ease), transform .9s var(--ease);}
+.reveal.in{opacity:1; transform:translateY(0);}
+.reveal-stagger > *{opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease);}
+.reveal-stagger.in > *{opacity:1; transform:translateY(0);}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.03s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.11s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.19s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.27s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.35s;}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.43s;}
+.reveal-stagger.in > *:nth-child(7){transition-delay:.51s;}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:100px;font-weight:700;font-size:.92rem;border:1px solid transparent;transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease), color .35s var(--ease);white-space:nowrap;}
+.btn-primary{background:var(--coral); color:#fff; box-shadow:0 10px 26px rgba(226,103,63,.35);}
+.btn-primary:hover{transform:translateY(-3px); box-shadow:0 16px 34px rgba(226,103,63,.45);}
+.btn-ghost{background:transparent; border-color:var(--line); color:var(--ink);}
+.btn-ghost:hover{background:var(--ink); color:var(--paper); border-color:var(--ink); transform:translateY(-3px);}
+.btn-light{background:rgba(250,246,236,.14); border-color:rgba(250,246,236,.35); color:var(--paper); backdrop-filter:blur(6px);}
+.btn-light:hover{background:var(--paper); color:var(--teal-900); transform:translateY(-3px);}
+.btn-sm{padding:10px 18px; font-size:.8rem;}
+
+.chip{display:inline-flex; align-items:center; gap:6px;font-size:.78rem; font-weight:700; padding:7px 14px;border-radius:100px; background:var(--paper-dim); color:var(--teal-800);border:1px solid var(--line);}
+.glass{background:rgba(255,255,255,.1);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(255,255,255,.28);}
+
+.stamp{width:104px;height:104px;border-radius:50%;border:2px dashed var(--gold);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--teal-800); text-align:center; flex-shrink:0;transform:rotate(-8deg);font-family:'Space Mono',monospace;}
+
+/* scenic svg illustrations -------------------------------------------- */
+.scene-wrap{width:100%;height:100%;position:relative;overflow:hidden;}
+.scene-wrap svg{width:100%;height:100%;display:block;transition:transform .8s var(--ease);}
+.scene-wrap.photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .8s var(--ease);}
+.hero-media .photo-wrap,
+.dest-media .photo-wrap,
+.day-media .photo-wrap,
+.hotel-media .photo-wrap,
+.food-card .photo-wrap{position:absolute;inset:0;width:100%;height:100%;}
+body.gallery-loading .hero-media{opacity:.72;}
+body.gallery-loading .hero-media::after{opacity:1;}
+.dest-card:hover .dest-media .photo-wrap img{transform:scale(1.08);}
+.day-card:hover .day-media .photo-wrap img{transform:scale(1.05);}
+.hotel-card:hover .hotel-media .photo-wrap img{transform:scale(1.08);}
+.food-card:hover .photo-wrap img{transform:scale(1.12) rotate(1deg);}
+
+/* ============================================================ NAV */
+.nav-wrap{position:fixed; top:18px; left:50%; transform:translateX(-50%);z-index:500; width:min(96%, 1080px);display:flex; align-items:center; gap:6px;padding:8px; border-radius:100px;background:rgba(12,46,42,.62);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border:1px solid rgba(250,246,236,.14);box-shadow:0 14px 40px rgba(0,0,0,.28);}
+.nav-brand{flex-shrink:0; display:flex; align-items:center; gap:8px;padding:8px 14px 8px 10px; color:var(--paper); font-family:'Fraunces',serif; font-weight:600; font-size:.95rem;}
+.nav-brand span.dot{width:7px;height:7px;border-radius:50%; background:var(--coral);}
+.nav-links{display:flex; gap:2px; overflow-x:auto; scrollbar-width:none; flex:1;}
+.nav-links::-webkit-scrollbar{display:none;}
+.nav-links a{flex-shrink:0; font-size:.8rem; font-weight:600; color:rgba(250,246,236,.68);padding:9px 15px; border-radius:100px; transition:background .3s, color .3s;white-space:nowrap;}
+.nav-links a:hover{color:var(--paper);}
+.nav-links a.active{background:rgba(250,246,236,.14); color:var(--paper);}
+.nav-progress{position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg,var(--coral),var(--gold));z-index:600; width:0%;}
+
+/* ============================================================ HERO */
+.hero{height:100svh; min-height:640px; position:relative; display:flex; align-items:flex-end;overflow:hidden; color:var(--paper);}
+.hero-media{position:absolute; inset:0; z-index:0;}
+.hero-media .scene-wrap svg{transform:scale(1.05);}
+.hero-media::after{content:''; position:absolute; inset:0;background:linear-gradient(180deg, rgba(12,29,26,.25) 0%, rgba(12,29,26,.1) 30%, rgba(9,25,22,.55) 72%, rgba(8,20,18,.92) 100%);}
+.hero-inner{position:relative; z-index:2; width:100%; padding-bottom:64px;}
+.hero-top-tag{display:inline-flex; align-items:center; gap:10px; padding:8px 16px 8px 8px;border-radius:100px; margin-bottom:26px;}
+.hero-top-tag .stamp-mini{width:30px;height:30px;border-radius:50%;background:var(--coral); display:flex;align-items:center;justify-content:center; font-size:.9rem;}
+.hero-top-tag span{font-family:'Space Mono',monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700;}
+.hero h1{font-size:clamp(2.6rem, 7.4vw, 6.2rem); line-height:.98; font-weight:600;max-width:16ch;}
+.hero h1 em{font-style:italic; font-weight:400; color:var(--gold-soft);}
+.hero-sub{margin-top:22px; font-size:clamp(1rem,1.6vw,1.25rem); font-weight:500;color:rgba(250,246,236,.88); display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+.hero-sub .sep{width:4px;height:4px;border-radius:50%;background:var(--gold-soft);}
+.hero-cards{margin-top:44px; display:grid; grid-template-columns:repeat(4,1fr); gap:1px;border-radius:var(--radius-lg); overflow:hidden;max-width:920px;}
+.hero-card{padding:20px 22px;}
+.hero-card .k{font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-soft); display:flex; align-items:center; gap:7px;}
+.hero-card .v{margin-top:8px; font-family:'Fraunces',serif; font-size:1.32rem; font-weight:500;}
+@media (max-width:800px){.hero-cards{grid-template-columns:repeat(2,1fr);}}
+.scroll-cue{position:absolute; bottom:26px; left:50%; transform:translateX(-50%); z-index:2;display:flex; flex-direction:column; align-items:center; gap:8px; color:rgba(250,246,236,.75);}
+.scroll-cue .line{width:1px;height:38px; background:linear-gradient(180deg, rgba(250,246,236,.9), transparent); position:relative; overflow:hidden;}
+.scroll-cue .line::after{content:''; position:absolute; left:-1px; top:-40%; width:3px;height:40%; background:var(--gold-soft);animation:scrollDot 1.8s ease-in-out infinite;}
+@keyframes scrollDot{0%{top:-40%;}70%{top:100%;}100%{top:100%;}}
+.scroll-cue span{font-family:'Space Mono',monospace; font-size:.66rem; letter-spacing:.14em; text-transform:uppercase;}
+
+/* ============================================================ OVERVIEW */
+.overview-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
+@media (max-width:840px){.overview-grid{grid-template-columns:1fr;}}
+.dest-card{border-radius:var(--radius-lg); overflow:hidden; background:#fff;box-shadow:var(--shadow-1); transition:transform .5s var(--ease), box-shadow .5s var(--ease);border:1px solid var(--line);}
+.dest-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-2);}
+.dest-media{position:relative; height:280px; overflow:hidden; isolation:isolate;}
+.dest-media .photo-wrap{z-index:0;}
+.dest-badge{z-index:5;}
+.dest-card:hover .dest-media .scene-wrap svg{transform:scale(1.08);}
+.dest-media::after{display:none;}
+.dest-badge{position:absolute; top:16px; left:16px; z-index:5;font-family:'Space Mono',monospace; font-size:.7rem; padding:6px 12px; border-radius:100px;color:#fff; letter-spacing:.06em;}
+.dest-body h3.dest-name{font-family:'Fraunces',serif; font-size:1.45rem; margin-bottom:8px;}
+.dest-body{padding:26px;}
+.dest-body p.desc{color:var(--ink-soft); font-size:.98rem;}
+.dest-meta{display:flex; gap:22px; margin-top:18px; flex-wrap:wrap;}
+.dest-meta div{font-size:.82rem;}
+.dest-meta .k{font-family:'Space Mono',monospace; font-size:.65rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); opacity:.7;}
+.dest-meta .v{font-weight:700; margin-top:3px;}
+.dest-chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px;}
+
+/* ============================================================ ROUTE */
+.route-section{background:var(--teal-900); color:var(--paper); position:relative; overflow:hidden;}
+.route-section::before{content:''; position:absolute; inset:0; opacity:.5; pointer-events:none;background:radial-gradient(circle at 15% 20%, rgba(198,154,76,.18), transparent 45%),radial-gradient(circle at 85% 80%, rgba(44,117,102,.35), transparent 50%);}
+.route-track{position:relative; max-width:560px; margin:0 auto; padding-left:56px;}
+.route-line{position:absolute; left:20px; top:8px; bottom:8px; width:2px;background:rgba(250,246,236,.16);}
+.route-line-fill{position:absolute; left:0; top:0; width:100%; height:0%;background:linear-gradient(180deg, var(--gold), var(--coral));transition:height 1.4s var(--ease);}
+.route-stop{position:relative; padding-bottom:52px;}
+.route-stop:last-child{padding-bottom:0;}
+.route-node{position:absolute; left:-56px; top:2px; width:40px;height:40px; border-radius:50%;background:var(--teal-800); border:2px solid var(--gold); display:flex; align-items:center; justify-content:center;font-size:1.05rem; z-index:2; line-height:1;}
+.route-stop.origin .route-node, .route-stop.final .route-node{background:var(--coral); border-color:var(--coral);}
+.route-city{font-family:'Fraunces',serif; font-size:1.3rem;}
+.route-note{margin-top:4px; font-size:.86rem; color:rgba(250,246,236,.62);}
+.route-leg{display:flex; align-items:center; gap:10px; margin-top:14px;font-family:'Space Mono',monospace; font-size:.75rem; color:var(--gold-soft);background:rgba(250,246,236,.06); padding:9px 14px; border-radius:100px; width:fit-content;}
+.route-layout{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:40px; align-items:start; margin-top:12px;}
+@media (max-width:960px){.route-layout{grid-template-columns:1fr; gap:36px;}}
+.route-galleries{display:grid; gap:18px;}
+.route-gallery-card{background:rgba(250,246,236,.08); border:1px solid rgba(250,246,236,.16); border-radius:var(--radius-md); padding:18px 18px 14px; backdrop-filter:blur(8px);}
+.route-gallery-card h4{font-family:'Fraunces',serif; font-size:1.12rem; color:var(--paper); margin-bottom:4px;}
+.route-gallery-card .route-gallery-sub{font-size:.78rem; color:rgba(250,246,236,.58); margin-bottom:12px;}
+.route-gallery-card .media-carousel{position:relative; inset:auto; height:210px; border-radius:14px; overflow:hidden;}
+
+.media-carousel{position:absolute; inset:0; z-index:0; overflow:hidden; background:var(--teal-900);}
+.media-carousel:focus-visible{outline:2px solid var(--gold-soft); outline-offset:2px;}
+.carousel-viewport{height:100%; width:100%; overflow:hidden; cursor:pointer; position:relative; isolation:isolate;}
+.carousel-track{display:block; position:relative; height:100%; width:100%; transform:none !important;}
+.carousel-slide{position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; visibility:hidden; transition:opacity .65s var(--ease), visibility .65s; pointer-events:none; z-index:0;}
+.carousel-slide.is-active{opacity:1; visibility:visible; pointer-events:auto; z-index:1;}
+.carousel-slide img{width:100%; height:100%; object-fit:cover; object-position:center; display:block; pointer-events:none;}
+.carousel-caption{position:absolute; left:0; right:0; bottom:0; margin:0; z-index:2; text-align:left; padding:56px 18px 46px; background:linear-gradient(180deg, transparent 0%, rgba(8,20,18,.35) 28%, rgba(8,20,18,.94) 100%); pointer-events:none;}
+.spotlight-title{display:block; font-family:'Fraunces',serif; font-size:clamp(1.05rem, 2.4vw, 1.55rem); font-weight:600; line-height:1.12; letter-spacing:-.02em; color:#fff; text-shadow:0 2px 20px rgba(0,0,0,.4);}
+.spotlight-desc{display:block; margin-top:7px; font-size:clamp(.78rem, 1.5vw, .92rem); line-height:1.45; color:rgba(250,246,236,.84); max-width:34ch;}
+.carousel-footer{position:absolute; left:0; right:0; bottom:0; z-index:4; display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 16px 12px; pointer-events:none;}
+.carousel-footer .carousel-dots{position:static; flex:1; display:flex; justify-content:center; gap:6px; pointer-events:auto;}
+.carousel-nav{position:absolute; top:50%; transform:translateY(-50%); z-index:3; width:36px; height:36px; border-radius:50%; border:1px solid rgba(250,246,236,.35); background:rgba(12,46,42,.55); color:var(--paper); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .25s, background .25s, transform .25s;}
+.media-carousel:hover .carousel-nav,.media-carousel:focus-within .carousel-nav{opacity:1;}
+.carousel-nav:hover{background:var(--coral); border-color:var(--coral);}
+.carousel-nav.prev{left:10px;}
+.carousel-nav.next{right:10px;}
+.carousel-dot{width:7px; height:7px; border-radius:50%; border:0; padding:0; background:rgba(250,246,236,.35); pointer-events:auto; cursor:pointer; transition:transform .25s, background .25s;}
+.carousel-dot.on{background:var(--gold-soft); transform:scale(1.25);}
+.carousel-expand{position:absolute; top:12px; right:12px; z-index:5; display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; padding:0; border-radius:50%; border:1px solid rgba(250,246,236,.35); background:rgba(12,46,42,.62); color:var(--paper); font-size:.95rem; backdrop-filter:blur(8px); transition:background .25s, transform .25s;}
+.carousel-expand:hover{background:var(--coral); border-color:var(--coral); transform:translateY(-1px);}
+.carousel-counter{font-family:'Space Mono',monospace; font-size:.62rem; letter-spacing:.08em; text-transform:uppercase; padding:5px 9px; border-radius:100px; background:rgba(12,46,42,.55); color:rgba(250,246,236,.88); border:1px solid rgba(250,246,236,.22); flex-shrink:0; pointer-events:none; min-width:3.2rem; text-align:center;}
+.carousel-footer-spacer{flex-shrink:0; min-width:3.2rem; visibility:hidden;}
+
+.lightbox{position:fixed; inset:0; z-index:900; background:rgba(8,20,18,.94); backdrop-filter:blur(12px); display:none; align-items:center; justify-content:center; flex-direction:column; padding:20px;}
+.lightbox.open{display:flex;}
+.lightbox-close{position:absolute; top:18px; right:18px; width:44px; height:44px; border-radius:50%; border:1px solid rgba(250,246,236,.25); background:rgba(250,246,236,.08); color:var(--paper); font-size:1.1rem; z-index:2;}
+.lightbox-close:hover{background:var(--coral); border-color:var(--coral);}
+.lightbox-nav{position:absolute; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; border:1px solid rgba(250,246,236,.3); background:rgba(250,246,236,.1); color:var(--paper); z-index:2;}
+.lightbox-nav:hover{background:var(--gold); color:var(--teal-900);}
+.lightbox-nav.prev{left:max(12px, 3vw);}
+.lightbox-nav.next{right:max(12px, 3vw);}
+.lightbox-stage{max-width:min(1100px, 94vw); width:100%; text-align:center;}
+.lightbox-stage img{max-height:min(68vh, 720px); width:auto; max-width:100%; border-radius:var(--radius-md); box-shadow:var(--shadow-2);}
+.lightbox-caption{margin-top:16px; color:rgba(250,246,236,.88); font-size:1rem; max-width:640px; margin-left:auto; margin-right:auto; text-align:center;}
+.lightbox-caption .spotlight-title{font-family:'Fraunces',serif; font-size:clamp(1.2rem, 2.5vw, 1.75rem); font-weight:600; color:#fff;}
+.lightbox-caption .spotlight-desc{font-size:.95rem; color:rgba(250,246,236,.82);}
+.lightbox-thumbs{display:flex; gap:8px; margin-top:18px; max-width:min(1100px, 94vw); overflow-x:auto; padding-bottom:6px;}
+.lightbox-thumb{flex-shrink:0; width:72px; height:52px; border-radius:10px; overflow:hidden; border:2px solid transparent; opacity:.55; cursor:pointer; padding:0; background:none; transition:opacity .25s, border-color .25s, transform .25s;}
+.lightbox-thumb img{width:100%; height:100%; object-fit:cover; display:block;}
+.lightbox-thumb.on,.lightbox-thumb:hover{opacity:1; border-color:var(--gold-soft); transform:translateY(-2px);}
+@media (max-width:720px){.carousel-nav{opacity:1; width:32px; height:32px;}.carousel-caption{padding-bottom:44px;}}
+@media print{ .lightbox{display:none !important;} }
+
+/* ============================================================ TIMELINE */
+.timeline-track{position:relative;}
+.timeline-spine{position:absolute; left:50%; top:0; bottom:0; width:2px; transform:translateX(-50%);background:var(--line);}
+.timeline-spine-fill{position:absolute; left:0; top:0; width:100%; height:0%;background:linear-gradient(180deg,var(--coral),var(--gold));transition:height .2s linear;}
+@media (max-width:900px){.timeline-spine{left:26px;}}
+.day-row{display:grid; grid-template-columns:1fr 90px 1fr; align-items:stretch; gap:24px; margin-bottom:64px; position:relative;}
+.day-row:last-child{margin-bottom:0;}
+.day-row .day-media{grid-column:1; grid-row:1;}
+.day-row .day-copy{grid-column:3; grid-row:1;}
+.day-row.flip .day-media{grid-column:3;}
+.day-row.flip .day-copy{grid-column:1;}
+.day-marker{grid-column:2; grid-row:1; align-self:center; display:flex; justify-content:center; position:relative; z-index:2;}
+.day-marker .num{width:64px;height:64px;border-radius:50%; background:var(--paper); border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:'Space Mono',monospace; box-shadow:var(--shadow-1);}
+.day-marker .num small{font-size:.55rem; letter-spacing:.08em; opacity:.6;}
+.day-marker .num b{font-size:1.15rem; font-family:'Fraunces',serif; font-weight:700;}
+@media (max-width:900px){
+  .day-row{grid-template-columns:1fr; gap:18px; padding-left:56px;}
+  .day-row .day-media,
+  .day-row .day-copy,
+  .day-row.flip .day-media,
+  .day-row.flip .day-copy{grid-column:1; grid-row:auto;}
+  .day-marker{grid-column:1; grid-row:1; position:absolute; left:-30px; top:0; align-self:start;}
+  .day-marker .num{width:52px;height:52px;}
+}
+.day-media{border-radius:var(--radius-lg); overflow:hidden; min-height:340px; height:auto; align-self:stretch; box-shadow:var(--shadow-1); position:relative; isolation:isolate;}
+.day-media .scene-wrap{position:absolute;inset:0;min-height:0;}
+.day-media .day-mood{z-index:6; top:52px; left:14px; right:auto;}
+.day-mood{position:absolute; padding:8px 13px; border-radius:100px; font-size:.78rem; font-weight:700;display:flex; align-items:center; gap:6px; white-space:nowrap; box-shadow:0 4px 16px rgba(12,46,42,.2);}
+.day-copy{background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); padding:32px;box-shadow:var(--shadow-1);}
+.day-copy .city-tag{display:flex; align-items:center; gap:8px; color:var(--coral); font-weight:700; font-size:.85rem;}
+.day-copy h3{margin-top:8px; font-size:1.8rem;}
+.day-highlight{margin-top:14px; padding:12px 16px; border-radius:14px; background:var(--paper-dim); display:flex; gap:10px; align-items:flex-start;border-left:3px solid var(--gold);}
+.day-highlight i{color:var(--coral); margin-top:2px;}
+.day-highlight span{font-size:.88rem; color:var(--ink-soft); font-style:italic;}
+.day-periods{margin-top:20px; display:flex; flex-direction:column; gap:12px;}
+.day-period{display:flex; gap:12px;}
+.day-period .p-icon{width:32px;height:32px;border-radius:9px; background:var(--teal-800); color:var(--paper); flex-shrink:0;display:flex; align-items:center; justify-content:center; font-size:.82rem;}
+.day-period .p-body .p-label{font-family:'Space Mono',monospace; font-size:.66rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); opacity:.7;}
+.day-period .p-body ul{margin-top:4px;}
+.day-period .p-body li{font-size:.9rem; color:var(--ink); position:relative; padding-left:14px;}
+.day-period .p-body li::before{content:'—'; position:absolute; left:0; color:var(--gold);}
+.day-facts{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; padding-top:20px; border-top:1px dashed var(--line);}
+.day-fact{font-size:.78rem;}
+.day-fact .k{font-family:'Space Mono',monospace; text-transform:uppercase; letter-spacing:.06em; font-size:.63rem; color:var(--ink-soft); opacity:.7;}
+.day-fact .v{font-weight:700; margin-top:2px;}
+.walk-dots{display:flex; gap:3px; margin-top:3px;}
+.walk-dots i{width:6px;height:6px;border-radius:50%; background:var(--line);}
+.walk-dots i.on{background:var(--coral);}
+
+/* ============================================================ TRANSPORT */
+.transport-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+@media (max-width:960px){.transport-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.transport-grid{grid-template-columns:1fr;}}
+.transport-card{background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;transition:transform .4s var(--ease), box-shadow .4s var(--ease);}
+.transport-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-2);}
+.transport-card .ic{width:48px;height:48px;border-radius:14px; background:var(--paper-dim); display:flex; align-items:center; justify-content:center;color:var(--coral); font-size:1.2rem; margin-bottom:16px;}
+.transport-card h4{font-size:1.08rem;}
+.transport-card p{margin-top:8px; font-size:.86rem; color:var(--ink-soft);}
+
+/* ============================================================ HOTELS */
+.hotel-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+@media (max-width:960px){.hotel-grid{grid-template-columns:1fr;}}
+.hotel-card{background:#fff; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1); transition:transform .5s var(--ease),box-shadow .5s var(--ease);}
+.hotel-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-2);}
+.hotel-media{height:210px; position:relative; overflow:hidden;}
+.hotel-card:hover .hotel-media .scene-wrap svg{transform:scale(1.08);}
+.hotel-price{position:absolute; bottom:12px; left:12px; background:var(--teal-900); color:var(--paper); font-family:'Space Mono',monospace; font-size:.72rem; padding:7px 12px; border-radius:100px; z-index:2;}
+.hotel-body{padding:24px;}
+.hotel-body .area{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--coral); font-weight:700; font-family:'Space Mono',monospace;}
+.hotel-body h4{margin-top:6px; font-size:1.25rem;}
+.hotel-pros{margin-top:14px; display:flex; flex-direction:column; gap:7px;}
+.hotel-pros li{font-size:.86rem; display:flex; gap:8px; align-items:flex-start; color:var(--ink-soft);}
+.hotel-pros li i{color:var(--teal-500); margin-top:3px; font-size:.76rem;}
+.hotel-actions{display:flex; gap:10px; margin-top:20px;}
+
+/* ============================================================ FOOD */
+.food-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+@media (max-width:960px){.food-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.food-grid{grid-template-columns:1fr;}}
+.food-card{position:relative; border-radius:var(--radius-md); overflow:hidden; height:260px; box-shadow:var(--shadow-1);}
+.food-card:hover .scene-wrap svg{transform:scale(1.12) rotate(1deg);}
+.food-card::after{content:'';position:absolute; inset:0; background:linear-gradient(180deg, transparent 45%, rgba(9,25,22,.85) 100%); z-index:1;}
+.food-info{position:absolute; bottom:0; left:0; right:0; padding:18px; z-index:2; color:#fff;}
+.food-info h4{font-size:1.08rem;}
+.food-info p{font-size:.78rem; margin-top:4px; color:rgba(250,246,236,.75);}
+
+/* ============================================================ BUDGET */
+.budget-wrap{display:grid; grid-template-columns:1.3fr 1fr; gap:50px; align-items:flex-start;}
+@media (max-width:900px){.budget-wrap{grid-template-columns:1fr;}}
+.budget-row{margin-bottom:22px;}
+.budget-row .top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;}
+.budget-row .top .name{font-weight:700; display:flex; align-items:center; gap:8px; font-size:.94rem;}
+.budget-row .top .amt{font-family:'Space Mono',monospace; font-size:.86rem; color:var(--ink-soft);}
+.bar-track{height:10px; background:var(--paper-dim); border-radius:100px; overflow:hidden;}
+.bar-fill{height:100%; width:0%; border-radius:100px; background:linear-gradient(90deg,var(--gold),var(--coral)); transition:width 1.4s var(--ease);}
+.budget-total{background:var(--teal-900); color:var(--paper); border-radius:var(--radius-lg); padding:34px; position:sticky; top:110px;}
+.budget-total .eyebrow{color:var(--gold-soft);}
+.budget-total .eyebrow::before{background:var(--gold-soft);}
+.budget-total .big{font-family:'Fraunces',serif; font-size:3rem; margin-top:12px;}
+.budget-total .pp{margin-top:6px; color:rgba(250,246,236,.68); font-size:.9rem;}
+.budget-total ul{margin-top:26px; display:flex; flex-direction:column; gap:10px; border-top:1px dashed rgba(250,246,236,.24); padding-top:20px;}
+.budget-total li{display:flex; justify-content:space-between; font-size:.85rem; color:rgba(250,246,236,.85);}
+
+/* ============================================================ TIPS */
+.tips-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+@media (max-width:800px){.tips-grid{grid-template-columns:1fr;}}
+.tip-item{background:#fff; border:1px solid var(--line); border-radius:16px; padding:20px 22px;display:flex; gap:16px; align-items:flex-start; transition:border-color .3s, transform .3s;}
+.tip-item:hover{transform:translateX(4px); border-color:var(--gold);}
+.tip-item .ic{width:38px;height:38px;border-radius:10px; background:var(--paper-dim); color:var(--coral); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.tip-item h5{font-size:.98rem;}
+.tip-item p{font-size:.85rem; color:var(--ink-soft); margin-top:5px;}
+
+/* ============================================================ CHECKLISTS */
+.check-shell{background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-1);}
+.check-progress-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:12px;}
+.check-progress-head .status{font-family:'Space Mono',monospace; font-size:.8rem; color:var(--ink-soft);}
+.check-list{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+@media (max-width:600px){.check-list{grid-template-columns:1fr;}}
+.check-item{display:flex; align-items:center; gap:14px; padding:14px 16px; border-radius:14px; border:1px solid var(--line);cursor:pointer; user-select:none; transition:background .3s, border-color .3s;}
+.check-item:hover{border-color:var(--gold);}
+.check-item.checked{background:var(--paper-dim); border-color:var(--teal-500);}
+.check-box{width:22px;height:22px;border-radius:7px; border:2px solid var(--line); flex-shrink:0;display:flex;align-items:center;justify-content:center; transition:all .25s var(--ease); background:#fff;}
+.check-item.checked .check-box{background:var(--teal-700); border-color:var(--teal-700);}
+.check-box i{opacity:0; transform:scale(.4); transition:all .25s var(--ease); color:#fff; font-size:.7rem;}
+.check-item.checked .check-box i{opacity:1; transform:scale(1);}
+.check-item .label{font-size:.92rem; font-weight:600;}
+.check-item.checked .label{text-decoration:line-through; opacity:.55;}
+.check-item .ic2{color:var(--ink-soft); opacity:.5; font-size:.9rem; margin-left:auto;}
+
+/* ============================================================ MEMORIES */
+.memories-section{background:var(--teal-900); color:var(--paper); position:relative; overflow:hidden;}
+.memories-section::before{content:''; position:absolute; inset:0; opacity:.6; pointer-events:none;background:radial-gradient(circle at 80% 10%, rgba(226,103,63,.22), transparent 45%), radial-gradient(circle at 10% 90%, rgba(198,154,76,.2), transparent 45%);}
+.mem-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:26px 20px;}
+@media (max-width:900px){.mem-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.mem-grid{grid-template-columns:1fr;}}
+.mem-item{text-align:center; position:relative;}
+.mem-item .stamp{margin:0 auto; background:rgba(250,246,236,.05); color:var(--paper); transition:transform .4s var(--ease);}
+.mem-item:nth-child(even) .stamp{transform:rotate(7deg);}
+.mem-item:hover .stamp{transform:rotate(0deg) scale(1.06);}
+.mem-item .stamp i{font-size:1.35rem; color:var(--gold-soft);}
+.mem-item .stamp small{font-family:'Space Mono',monospace; font-size:.56rem; letter-spacing:.08em; margin-top:6px; text-transform:uppercase;}
+.mem-item p{margin-top:16px; font-size:.9rem; color:rgba(250,246,236,.78); max-width:190px; margin-left:auto; margin-right:auto;}
+
+/* ============================================================ FOOTER */
+footer{background:var(--ink); color:var(--paper); position:relative; padding-top:0;}
+.footer-wave{display:block; width:100%; line-height:0; transform:translateY(1px);}
+.footer-inner{padding:70px 0 40px;}
+.footer-top{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:30px; padding-bottom:44px; border-bottom:1px solid rgba(250,246,236,.12);}
+.footer-top h3{font-size:clamp(1.6rem,3vw,2.4rem); max-width:520px;}
+.footer-social{display:flex; gap:12px;}
+.footer-social a{width:42px;height:42px;border-radius:50%; border:1px solid rgba(250,246,236,.22); display:flex; align-items:center; justify-content:center; transition:.3s;}
+.footer-social a:hover{background:var(--coral); border-color:var(--coral);}
+.footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:28px; flex-wrap:wrap; gap:14px;}
+.footer-bottom p{font-size:.8rem; color:rgba(250,246,236,.5);}
+
+.print-btn{position:fixed; bottom:26px; right:26px; z-index:400; width:48px; height:48px; padding:0; justify-content:center; border-radius:50%;}
+@media (max-width:720px){.print-btn{display:none;}}
+@media print{ .nav-wrap,.scroll-cue,.print-btn,.nav-progress{display:none !important;} }
+</style>
+</head>
+<body>
+
+<div class="nav-progress" id="navProgress"></div>
+
+<nav class="nav-wrap" id="navWrap">
+  <div class="nav-brand"><span class="dot"></span>🇹🇭 TH/26</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#overview">Overview</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#transport">Transport</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#food">Food</a>
+    <a href="#budget">Budget</a>
+    <a href="#map">Map</a>
+    <a href="#tips">Tips</a>
+    <a href="#packing">Packing</a>
+    <a href="#checklist">Checklist</a>
+    <a href="#memories">Memories</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-media" id="heroScene"></div>
+  <div class="hero-inner container">
+    <div class="hero-top-tag glass">
+      <span class="stamp-mini">✈️</span>
+      <span>CMB → BKK → CMB · Boarding Pass No. 001</span>
+    </div>
+    <h1>Thailand<br><em>Core Memory</em> Trip</h1>
+    <p class="hero-sub">7 Days <span class="sep"></span> Krabi <span class="sep"></span> Phi Phi <span class="sep"></span> Bangkok <span class="sep"></span> Pattaya</p>
+    <div class="hero-cards glass" style="border-radius:28px;">
+      <div class="hero-card"><div class="k"><i class="fa-regular fa-calendar"></i> Duration</div><div class="v">7 Days</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-solid fa-sack-dollar"></i> Budget</div><div class="v">~$4,500</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-solid fa-user-group"></i> Travelers</div><div class="v">4 People</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-regular fa-sun"></i> Best Season</div><div class="v">Nov – Mar</div></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
+</header>
+
+<section id="overview">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Destinations</span>
+      <h2>Four cities, one unforgettable arc</h2>
+      <p>From limestone cliffs and turquoise coves to golden temples and neon boulevards — the four chapters of this journey.</p>
+    </div>
+    <div class="overview-grid reveal-stagger" id="overviewGrid"></div>
+  </div>
+</section>
+
+<section id="map" class="route-section">
+  <div class="container">
+    <div class="section-head on-dark reveal">
+      <span class="eyebrow">The Route</span>
+      <h2>Colombo to the Andaman coast, and back through Bangkok's lights</h2>
+      <p>Colombo out, Andaman in — then Bangkok twice, with Pattaya between the city lights.</p>
+    </div>
+    <div class="route-layout reveal">
+    <div class="route-track" id="routeTrack">
+      <div class="route-line"><div class="route-line-fill" id="routeFill"></div></div>
+      <div id="routeStops"></div>
+    </div>
+    <div class="route-galleries" id="routeGalleries"></div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">Day by Day</span>
+      <h2>The seven-day story</h2>
+      <p>Mornings on the water, afternoons in the heat, evenings when the country turns gold and neon.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="timeline-track" id="timelineTrack">
+      <div class="timeline-spine"><div class="timeline-spine-fill" id="spineFill"></div></div>
+      <div id="dayRows"></div>
+    </div>
+  </div>
+</section>
+
+<section id="transport" style="background:var(--paper-dim);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Getting Around</span>
+      <h2>Moving through the kingdom</h2>
+      <p>Sky, sea, rail, and road — how this itinerary actually covers ground.</p>
+    </div>
+    <div class="transport-grid reveal-stagger" id="transportGrid"></div>
+  </div>
+</section>
+
+<section id="hotels">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Where to Stay</span>
+      <h2>Basecamps for every leg</h2>
+      <p>Three areas, each picked for how they fit the day around them — beach access in Krabi, transit + nightlife balance in Bangkok, strip-side energy in Pattaya.</p>
+    </div>
+    <div class="hotel-grid reveal-stagger" id="hotelGrid"></div>
+  </div>
+</section>
+
+<section id="food" style="background:var(--paper-dim);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Eat This</span>
+      <h2>The non-negotiable dishes</h2>
+      <p>Seven dishes that taste like the trip itself — street corners, islands, and night markets.</p>
+    </div>
+    <div class="food-grid reveal-stagger" id="foodGrid"></div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Numbers</span>
+      <h2>Budget breakdown, for four</h2>
+      <p>Estimated spend for four travelers — a magazine sketch, not a receipt.</p>
+    </div>
+    <div class="budget-wrap">
+      <div class="reveal" id="budgetBars"></div>
+      <div class="budget-total reveal" id="budgetTotalCard">
+        <span class="eyebrow">Grand Total</span>
+        <div class="big" id="budgetBig">$0</div>
+        <div class="pp" id="budgetPP">≈ $0 per person</div>
+        <ul id="budgetList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tips" style="background:var(--paper-dim);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Before You Go</span>
+      <h2>Local knowledge, distilled</h2>
+      <p>Notes from the road — currency, temples, markets, and the rest.</p>
+    </div>
+    <div class="tips-grid reveal-stagger" id="tipsGrid"></div>
+  </div>
+</section>
+
+<section id="packing">
+  <div class="container-narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pack Smart</span>
+      <h2>What goes in the bag</h2>
+      <p>Sun, salt, and one reliable layer for the monsoon hour.</p>
+    </div>
+    <div class="check-shell reveal">
+      <div class="check-progress-head">
+        <div class="status" id="packStatus">0 / 12 items</div>
+        <div class="bar-track" style="width:160px;"><div class="bar-fill" id="packBar" style="background:linear-gradient(90deg,var(--teal-500),var(--gold));"></div></div>
+      </div>
+      <div class="check-list" id="packList"></div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist" style="background:var(--paper-dim);">
+  <div class="container-narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pre-Departure</span>
+      <h2>Loose ends, tied off</h2>
+      <p>Passports, bookings, and the quiet details before takeoff.</p>
+    </div>
+    <div class="check-shell reveal">
+      <div class="check-progress-head">
+        <div class="status" id="prepStatus">0 / 10 ready</div>
+        <div class="bar-track" style="width:160px;"><div class="bar-fill" id="prepBar"></div></div>
+      </div>
+      <div class="check-list" id="prepList"></div>
+    </div>
+  </div>
+</section>
+
+<section id="memories" class="memories-section">
+  <div class="container">
+    <div class="section-head on-dark center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">⭐ Core Memories</span>
+      <h2>The moments this whole trip is built around</h2>
+      <p>Everything else is logistics. This is what you'll actually talk about years from now.</p>
+    </div>
+    <div class="mem-grid reveal-stagger" id="memGrid"></div>
+  </div>
+</section>
+
+<footer>
+  <svg class="footer-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:70px;">
+    <path fill="#12231e" d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,90 L0,90 Z"></path>
+  </svg>
+  <div class="footer-inner container">
+    <div class="footer-top">
+      <h3>Seven days in Thailand — told like a travel story.</h3>
+      <div class="footer-social">
+        <a href="#overview" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#" aria-label="Share"><i class="fa-solid fa-share-nodes"></i></a>
+        <a href="#" aria-label="Print" onclick="window.print();return false;"><i class="fa-solid fa-print"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Thailand Core Memory Trip · Krabi · Phi Phi · Bangkok · Pattaya</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="btn btn-primary print-btn" onclick="window.print();return false;" aria-label="Print"><i class="fa-solid fa-print"></i></a>
+
+<div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo gallery">
+  <button type="button" class="lightbox-close" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button>
+  <button type="button" class="lightbox-nav prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+  <button type="button" class="lightbox-nav next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="lightbox-stage">
+    <img id="lightboxImg" alt="">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+  <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+</div>
+
+<script>
+/* ============================================================
+   SVG SCENE GENERATOR — fully self-contained illustrations
+   ============================================================ */
+let uidCounter = 0;
+function uid(){ uidCounter++; return 'g'+uidCounter; }
+
+function svgOpen(vb, ids){
+  return `<svg viewBox="${vb}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`;
+}
+function defs(str){ return `<defs>${str}</defs>`; }
+
+function karst(x, y, s, fill){
+  return `<path d="M ${x} ${y} C ${x-10*s} ${y-40*s}, ${x-6*s} ${y-90*s}, ${x} ${y-120*s}
+    C ${x+6*s} ${y-90*s}, ${x+10*s} ${y-40*s}, ${x+20*s} ${y}
+    L ${x-20*s} ${y} Z" fill="${fill}"/>`;
+}
+function palm(x, y, s, fill){
+  let leaves='';
+  const angles=[-70,-35,-5,25,55];
+  angles.forEach(a=>{
+    const rad = a*Math.PI/180;
+    const ex = x + Math.cos(rad)*40*s, ey = y - 60*s - Math.sin(rad)*30*s;
+    leaves += `<path d="M ${x} ${y-60*s} Q ${x+Math.cos(rad)*20*s} ${y-60*s-20*s} ${ex} ${ey}" stroke="${fill}" stroke-width="${6*s}" fill="none" stroke-linecap="round"/>`;
+  });
+  return `<path d="M ${x} ${y} Q ${x-6*s} ${y-30*s} ${x} ${y-60*s}" stroke="${fill}" stroke-width="${5*s}" fill="none"/>${leaves}`;
+}
+function boat(x,y,s,fill){
+  return `<path d="M ${x-24*s} ${y} Q ${x} ${y+10*s} ${x+24*s} ${y} L ${x+18*s} ${y-4*s} L ${x-18*s} ${y-4*s} Z" fill="${fill}"/>
+  <line x1="${x}" y1="${y-4*s}" x2="${x}" y2="${y-24*s}" stroke="${fill}" stroke-width="${2*s}"/>`;
+}
+function tower(x,y,w,h,fill,lit){
+  let windows='';
+  if(lit){
+    for(let r=0;r<Math.floor(h/16);r++){
+      for(let c=0;c<Math.max(1,Math.floor(w/10));c++){
+        if(Math.random()>0.45) windows += `<rect x="${x+4+c*10}" y="${y-h+8+r*16}" width="4" height="6" fill="#e3c589" opacity="${(Math.random()*0.5+0.4).toFixed(2)}"/>`;
+      }
+    }
+  }
+  return `<rect x="${x}" y="${y-h}" width="${w}" height="${h}" fill="${fill}"/>${windows}`;
+}
+function lantern(x,y,s,fill){
+  return `<ellipse cx="${x}" cy="${y}" rx="${7*s}" ry="${9*s}" fill="${fill}"/><line x1="${x}" y1="${y-9*s}" x2="${x}" y2="${y-22*s}" stroke="#8a6a2e" stroke-width="1"/>`;
+}
+
+function sceneCliffs(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c589"/><stop offset="0.55" stop-color="#e2673f"/><stop offset="1" stop-color="#175247"/></linearGradient>
+    <linearGradient id="seaA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c7566"/><stop offset="1" stop-color="#0c2e2a"/></linearGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyA)"/>
+    <circle cx="300" cy="90" r="34" fill="#faf6ec" opacity="0.9"/>
+    ${karst(90,210,2.1,'#0f3c36')}
+    ${karst(150,220,1.5,'#12231e')}
+    ${karst(310,215,1.8,'#0f3c36')}
+    <rect y="210" width="400" height="90" fill="url(#seaA)"/>
+    <rect y="210" width="400" height="4" fill="#e3c589" opacity="0.35"/>
+    ${boat(230,255,1.4,'#12231e')}
+    ${palm(40,300,1.6,'#0c2e2a')}
+  </svg>`;
+}
+function sceneLagoon(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="seaB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd6c2"/><stop offset="0.5" stop-color="#2c7566"/><stop offset="1" stop-color="#0c2e2a"/></linearGradient>
+    <linearGradient id="skyB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf6ec"/><stop offset="1" stop-color="#e3c589"/></linearGradient>
+  `) + `
+    <rect width="400" height="140" fill="url(#skyB)"/>
+    ${karst(20,150,2.4,'#175247')}
+    ${karst(380,150,2.2,'#0f3c36')}
+    ${karst(200,140,3,'#12231e')}
+    <rect y="140" width="400" height="160" fill="url(#seaB)"/>
+    <ellipse cx="200" cy="150" rx="220" ry="14" fill="#faf6ec" opacity="0.25"/>
+    ${boat(120,220,1.6,'#12231e')}
+    <circle cx="260" cy="200" r="4" fill="#faf6ec" opacity="0.6"/>
+    <circle cx="270" cy="215" r="3" fill="#faf6ec" opacity="0.5"/>
+    <circle cx="255" cy="230" r="5" fill="#faf6ec" opacity="0.4"/>
+  </svg>`;
+}
+function sceneTemple(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c589"/><stop offset="1" stop-color="#175247"/></linearGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyC)"/>
+    ${tower(40,230,26,90,'#0f3c36',true)}
+    ${tower(70,230,20,60,'#12231e',true)}
+    ${tower(320,230,24,100,'#0f3c36',true)}
+    ${tower(350,230,18,70,'#12231e',true)}
+    <path d="M 160 230 L 200 120 L 240 230 Z" fill="#0c2e2a"/>
+    <path d="M 175 230 L 200 160 L 225 230 Z" fill="#175247"/>
+    <path d="M 130 130 Q 200 95 270 130 L 260 138 Q 200 112 140 138 Z" fill="#c69a4c"/>
+    <circle cx="200" cy="90" r="6" fill="#c69a4c"/>
+    <rect y="230" width="400" height="70" fill="#0c2e2a"/>
+    <rect y="230" width="400" height="3" fill="#e3c589" opacity="0.4"/>
+  </svg>`;
+}
+function sceneSkyline(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#175247"/><stop offset="1" stop-color="#0c2e2a"/></linearGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyD)"/>
+    <circle cx="330" cy="60" r="26" fill="#e3c589" opacity="0.85"/>
+    ${tower(20,260,30,110,'#0f3c36',true)}
+    ${tower(55,260,22,150,'#12231e',true)}
+    ${tower(85,260,26,90,'#0f3c36',true)}
+    ${tower(140,260,34,190,'#12231e',true)}
+    ${tower(180,260,24,130,'#0f3c36',true)}
+    ${tower(215,260,28,170,'#12231e',true)}
+    ${tower(255,260,20,100,'#0f3c36',true)}
+    ${tower(285,260,32,150,'#12231e',true)}
+    ${tower(325,260,24,110,'#0f3c36',true)}
+    ${tower(355,260,20,80,'#12231e',true)}
+    <rect y="260" width="400" height="40" fill="#0a201d"/>
+  </svg>`;
+}
+function sceneNeon(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyE" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c2e2a"/><stop offset="1" stop-color="#12231e"/></linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#e2673f" stop-opacity="0.55"/><stop offset="1" stop-color="#e2673f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB"><stop offset="0" stop-color="#c69a4c" stop-opacity="0.5"/><stop offset="1" stop-color="#c69a4c" stop-opacity="0"/></radialGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyE)"/>
+    <circle cx="90" cy="90" r="90" fill="url(#glowA)"/>
+    <circle cx="320" cy="150" r="110" fill="url(#glowB)"/>
+    ${tower(30,270,26,120,'#0f3c36',true)}
+    ${tower(65,270,20,90,'#12231e',true)}
+    ${tower(100,270,30,150,'#0f3c36',true)}
+    ${tower(240,270,24,110,'#0f3c36',true)}
+    ${tower(275,270,34,170,'#12231e',true)}
+    ${tower(320,270,22,130,'#0f3c36',true)}
+    ${tower(355,270,26,95,'#12231e',true)}
+    <rect x="150" y="150" width="90" height="120" fill="#12231e"/>
+    <rect x="150" y="150" width="90" height="8" fill="#e2673f" opacity="0.85"/>
+    <rect x="150" y="180" width="90" height="6" fill="#c69a4c" opacity="0.8"/>
+    <rect x="150" y="210" width="90" height="6" fill="#e2673f" opacity="0.7"/>
+    <rect y="270" width="400" height="30" fill="#0a201d"/>
+  </svg>`;
+}
+function sceneBeachtown(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c589"/><stop offset="1" stop-color="#f2a382"/></linearGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyF)"/>
+    <circle cx="200" cy="90" r="40" fill="#faf6ec" opacity="0.9"/>
+    <rect y="190" width="400" height="14" fill="#2c7566"/>
+    <rect y="204" width="400" height="96" fill="#c69a4c" opacity="0.4"/>
+    <path d="M 60 204 L 80 160 L 100 204 Z" fill="#0f3c36"/>
+    <rect x="72" y="204" width="16" height="30" fill="#12231e"/>
+    <path d="M 260 204 L 290 150 L 320 204 Z" fill="#175247"/>
+    <rect x="275" y="204" width="30" height="34" fill="#12231e"/>
+    ${palm(150,300,1.8,'#0c2e2a')}
+    ${palm(340,300,1.5,'#175247')}
+    ${boat(200,210,1,'#12231e')}
+  </svg>`;
+}
+function sceneAirport(){
+  return svgOpen('0 0 400 300') + defs(`
+    <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf6ec"/><stop offset="1" stop-color="#e3c589"/></linearGradient>
+  `) + `
+    <rect width="400" height="300" fill="url(#skyG)"/>
+    <circle cx="100" cy="220" r="26" fill="#faf6ec" opacity="0.7"/>
+    <circle cx="140" cy="230" r="34" fill="#faf6ec" opacity="0.7"/>
+    <circle cx="300" cy="90" r="20" fill="#faf6ec" opacity="0.6"/>
+    <circle cx="330" cy="100" r="28" fill="#faf6ec" opacity="0.6"/>
+    <g transform="translate(180,130) rotate(-20)">
+      <path d="M0 0 L120 8 L100 16 L0 8 Z" fill="#0f3c36"/>
+      <path d="M40 4 L30 -30 L45 -28 L55 4 Z" fill="#175247"/>
+      <path d="M40 12 L30 40 L45 38 L55 12 Z" fill="#175247"/>
+      <path d="M100 12 L118 24 L108 12 Z" fill="#12231e"/>
+    </g>
+    <path d="M -20 165 Q 100 150 300 170" stroke="#c69a4c" stroke-width="2" fill="none" stroke-dasharray="6 8" opacity="0.6"/>
+    <rect y="260" width="400" height="40" fill="#175247" opacity="0.25"/>
+  </svg>`;
+}
+function sceneDish(hue){
+  const cols = {
+    coral:['#e2673f','#f2a382'], gold:['#c69a4c','#e3c589'], teal:['#175247','#2c7566']
+  };
+  const c = cols[hue] || cols.coral;
+  return svgOpen('0 0 300 260') + defs(`
+    <radialGradient id="plateG"><stop offset="0" stop-color="#faf6ec"/><stop offset="1" stop-color="#e9dfc4"/></radialGradient>
+  `) + `
+    <rect width="300" height="260" fill="#f1e9d6"/>
+    <ellipse cx="150" cy="150" rx="105" ry="70" fill="url(#plateG)"/>
+    <ellipse cx="150" cy="150" rx="80" ry="52" fill="none" stroke="${c[0]}" stroke-width="2" opacity="0.4"/>
+    <ellipse cx="150" cy="140" rx="55" ry="34" fill="${c[0]}" opacity="0.85"/>
+    <ellipse cx="130" cy="130" rx="16" ry="10" fill="${c[1]}" opacity="0.8"/>
+    <ellipse cx="170" cy="150" rx="14" ry="9" fill="${c[1]}" opacity="0.7"/>
+    <path d="M 130 100 Q 126 85 132 72" stroke="#e9dfc4" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 150 96 Q 146 80 152 66" stroke="#e9dfc4" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round"/>
+    <path d="M 170 100 Q 166 85 172 72" stroke="#e9dfc4" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  </svg>`;
+}
+
+const SCENES = {
+  cliffs: sceneCliffs, lagoon: sceneLagoon, temple: sceneTemple,
+  skyline: sceneSkyline, neon: sceneNeon, beachtown: sceneBeachtown,
+  airport: sceneAirport,
+  dish1: ()=>sceneDish('coral'), dish2: ()=>sceneDish('gold'), dish3: ()=>sceneDish('teal')
+};
+function sceneWrap(type){
+  const fn = SCENES[type] || sceneCliffs;
+  return `<div class="scene-wrap">${fn()}</div>`;
+}
+function photoWrap(src, alt, sceneFallback){
+  const safeAlt = (alt || '').replace(/"/g, '&quot;');
+  if(!src) return sceneWrap(sceneFallback || 'cliffs');
+  return `<div class="scene-wrap photo-wrap"><img src="${src}" alt="${safeAlt}" loading="lazy" decoding="async"></div>`;
+}
+
+let GALLERY_DATA = {};
+
+async function ensureGalleryData(){
+  try{
+    const res = await fetch('assets/images/gallery-manifest.json', { cache:'no-store' });
+    if(res.ok){
+      GALLERY_DATA = await res.json();
+      return;
+    }
+  }catch{}
+  GALLERY_DATA = {};
+}
+
+const ROUTE_GALLERY_STOPS = [
+  { key:'krabi', title:'Krabi & Ao Nang', sub:'Beaches · night market · boats · seafood' },
+  { key:'phi-phi', title:'Phi Phi Islands', sub:'Maya Bay · lagoon · snorkel · speedboat' },
+  { key:'bangkok', title:'Bangkok', sub:'Temples · street food · cruise · malls · rooftops' },
+  { key:'pattaya', title:'Pattaya', sub:'Beach · Sanctuary of Truth · Walking Street' },
+];
+
+function escHtml(str){
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+}
+
+function spotlightCaptionHtml(caption){
+  const sep = caption.indexOf(' — ');
+  const title = sep >= 0 ? caption.slice(0, sep) : caption;
+  const desc = sep >= 0 ? caption.slice(sep + 3) : '';
+  return `<figcaption class="carousel-caption">
+    <span class="spotlight-title">${escHtml(title)}</span>
+    ${desc ? `<span class="spotlight-desc">${escHtml(desc)}</span>` : ''}
+  </figcaption>`;
+}
+
+function carouselHtml(galleryKey, uid){
+  const items = GALLERY_DATA[galleryKey];
+  if(!items || !items.length) return photoWrap('', '', 'cliffs');
+  const id = `${galleryKey}-${uid}`;
+  return `
+    <div class="media-carousel" data-gallery-key="${galleryKey}" data-carousel-id="${id}" tabindex="0">
+      <div class="carousel-viewport" data-open-gallery>
+        <div class="carousel-track">
+          ${items.map((it,i)=>`
+            <figure class="carousel-slide${i===0?' is-active':''}" data-index="${i}">
+              <img src="${it.src}" alt="${escHtml(it.caption)}" loading="${i===0?'eager':'lazy'}" decoding="async">
+              ${spotlightCaptionHtml(it.caption)}
+            </figure>`).join('')}
+        </div>
+      </div>
+      <button type="button" class="carousel-nav prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+      <button type="button" class="carousel-nav next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="carousel-footer">
+        <span class="carousel-counter">1 / ${items.length}</span>
+        <div class="carousel-dots">${items.map((_,i)=>`<button type="button" class="carousel-dot${i===0?' on':''}" aria-label="Photo ${i+1} of ${items.length}"></button>`).join('')}</div>
+        <span class="carousel-footer-spacer" aria-hidden="true"></span>
+      </div>
+      <button type="button" class="carousel-expand" aria-label="Open gallery"><i class="fa-solid fa-images"></i></button>
+    </div>`;
+}
+
+let lightboxItems = [];
+let lightboxIndex = 0;
+const lightboxEl = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxThumbs = document.getElementById('lightboxThumbs');
+
+function renderLightbox(){
+  const item = lightboxItems[lightboxIndex];
+  if(!item) return;
+  lightboxImg.src = item.src;
+  lightboxImg.alt = item.caption;
+  lightboxCaption.innerHTML = '';
+  const sep = item.caption.indexOf(' — ');
+  const title = document.createElement('span');
+  title.className = 'spotlight-title';
+  title.style.display = 'block';
+  title.textContent = sep >= 0 ? item.caption.slice(0, sep) : item.caption;
+  lightboxCaption.appendChild(title);
+  if(sep >= 0){
+    const desc = document.createElement('span');
+    desc.className = 'spotlight-desc';
+    desc.style.display = 'block';
+    desc.style.marginTop = '8px';
+    desc.textContent = item.caption.slice(sep + 3);
+    lightboxCaption.appendChild(desc);
+  }
+  lightboxThumbs.querySelectorAll('.lightbox-thumb').forEach((btn,i)=>{
+    btn.classList.toggle('on', i === lightboxIndex);
+  });
+}
+
+function openLightbox(items, startIndex){
+  lightboxItems = items;
+  lightboxIndex = startIndex;
+  lightboxThumbs.innerHTML = items.map((it,i)=>`
+    <button type="button" class="lightbox-thumb${i===startIndex?' on':''}" data-idx="${i}" aria-label="${escHtml(it.caption)}">
+      <img src="${it.src}" alt="">
+    </button>`).join('');
+  lightboxThumbs.querySelectorAll('.lightbox-thumb').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      lightboxIndex = Number(btn.dataset.idx);
+      renderLightbox();
+    });
+  });
+  renderLightbox();
+  lightboxEl.hidden = false;
+  lightboxEl.classList.add('open');
+  lightboxEl.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(){
+  lightboxEl.classList.remove('open');
+  lightboxEl.hidden = true;
+  lightboxEl.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+  lightboxImg.removeAttribute('src');
+}
+
+function stepLightbox(delta){
+  if(!lightboxItems.length) return;
+  lightboxIndex = (lightboxIndex + delta + lightboxItems.length) % lightboxItems.length;
+  renderLightbox();
+}
+
+lightboxEl.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lightboxEl.querySelector('.lightbox-nav.prev').addEventListener('click', ()=> stepLightbox(-1));
+lightboxEl.querySelector('.lightbox-nav.next').addEventListener('click', ()=> stepLightbox(1));
+lightboxEl.addEventListener('click', e=>{ if(e.target === lightboxEl) closeLightbox(); });
+document.addEventListener('keydown', e=>{
+  if(!lightboxEl.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') stepLightbox(-1);
+  if(e.key === 'ArrowRight') stepLightbox(1);
+});
+
+function initCarousels(root){
+  root.querySelectorAll('.media-carousel').forEach(initCarousel);
+}
+
+function initCarousel(car){
+  if(car.dataset.carouselReady === '1') return;
+  car.dataset.carouselReady = '1';
+  const viewport = car.querySelector('.carousel-viewport');
+  const slides = [...car.querySelectorAll('.carousel-slide')];
+  const dots = [...car.querySelectorAll('.carousel-dot')];
+  const counter = car.querySelector('.carousel-counter');
+  const galleryKey = car.dataset.galleryKey;
+  const items = GALLERY_DATA[galleryKey] || [];
+  let index = slides.length ? Math.floor(Math.random() * slides.length) : 0;
+  let timer = null;
+
+  function go(next){
+    if(!slides.length) return;
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide,i)=> slide.classList.toggle('is-active', i === index));
+    dots.forEach((dot,i)=> dot.classList.toggle('on', i === index));
+    if(counter) counter.textContent = `${index + 1} / ${slides.length}`;
+  }
+
+  function tick(){
+    go(index + 1);
+  }
+
+  function startAuto(){
+    clearInterval(timer);
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const delay = 4200 + Math.floor(Math.random() * 2200);
+    timer = setInterval(tick, delay);
+  }
+
+  go(index);
+  startAuto();
+
+  if(typeof ResizeObserver !== 'undefined' && viewport){
+    const ro = new ResizeObserver(()=> go(index));
+    ro.observe(viewport);
+  }
+
+  car.querySelectorAll('.carousel-slide img').forEach(img=>{
+    if(!img.complete) img.addEventListener('load', ()=> go(index), { once:true });
+  });
+
+  car.querySelector('.carousel-nav.prev')?.addEventListener('click', e=>{
+    e.stopPropagation();
+    go(index - 1);
+    startAuto();
+  });
+  car.querySelector('.carousel-nav.next')?.addEventListener('click', e=>{
+    e.stopPropagation();
+    go(index + 1);
+    startAuto();
+  });
+  dots.forEach((dot,i)=>{
+    dot.addEventListener('click', e=>{
+      e.stopPropagation();
+      go(i);
+      startAuto();
+    });
+  });
+  car.addEventListener('mouseenter', ()=> clearInterval(timer));
+  car.addEventListener('mouseleave', startAuto);
+
+  const open = ()=> openLightbox(items, index);
+  car.querySelector('.carousel-expand')?.addEventListener('click', e=>{
+    e.stopPropagation();
+    open();
+  });
+  car.querySelector('[data-open-gallery]')?.addEventListener('click', open);
+}
+
+/* ============================================================
+   DATA
+   ============================================================ */
+const destinations = [
+  { name:'Krabi (Ao Nang)', badge:'Day 1', color:'var(--teal-700)', scene:'cliffs', galleryKey:'krabi', image:'assets/images/destinations/krabi.jpg',
+    desc:'Your soft landing — limestone cliffs dropping straight into the Andaman Sea, longtail boats lined up on the sand, and a laid-back beach town to ease into island time.',
+    highlights:['Ao Nang Beach','Night Market','Seafood on the sand'], vibe:'Barefoot & breezy', time:'Fly in direct', weather:'30°C · Sunny' },
+  { name:'Phi Phi Islands', badge:'Day 2', color:'var(--coral)', scene:'lagoon', galleryKey:'phi-phi', image:'assets/images/destinations/phi-phi.jpg',
+    desc:'The postcard shot come to life — Maya Bay\'s cliffs, Pileh Lagoon\'s impossible blue, and a full day on the water by speedboat.',
+    highlights:['Maya Bay','Pileh Lagoon','Snorkeling'], vibe:'Bucket-list high', time:'40 min by speedboat', weather:'31°C · Clear' },
+  { name:'Bangkok', badge:'Day 4 & 6', color:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/destinations/bangkok.jpg',
+    desc:'The capital\'s full sensory overload, in the best way — golden temples by day, Chao Phraya river cruises by night, and shopping malls that swallow whole afternoons.',
+    highlights:['Chinatown street food','River dinner cruise','Siam shopping'], vibe:'Electric & endless', time:'1hr flight from Krabi', weather:'33°C · Humid' },
+  { name:'Pattaya', badge:'Day 5', color:'var(--teal-500)', scene:'neon', galleryKey:'pattaya', image:'assets/images/destinations/pattaya.jpg',
+    desc:'A day-trip detour for beach clubs by afternoon and Walking Street\'s neon chaos by night — the loud, fun contrast to everywhere else on this trip.',
+    highlights:['Sanctuary of Truth','Walking Street','Live music'], vibe:'Loud & fun', time:'2hr bus from Bangkok', weather:'32°C · Sunny' }
+];
+
+const routeStops = [
+  {city:'Colombo', note:'Trip origin — Bandaranaike Intl. (CMB)', icon:'🏁', cls:'origin', leg:null},
+  {city:'Krabi', note:'International arrival, Andaman coast', icon:'🏝️', leg:{mode:'✈️ Flight', dur:'~3h 40m direct'}},
+  {city:'Bangkok', note:'Domestic hop or overnight VIP bus', icon:'🏯', leg:{mode:'✈️ / 🚌 Flight or Overnight Bus', dur:'1h flight · 11h bus'}},
+  {city:'Pattaya', note:'Day-and-night detour from Bangkok', icon:'🌃', leg:{mode:'🚌 Bus', dur:'~2h'}},
+  {city:'Bangkok', note:'Back for shopping & rooftop dinner', icon:'🛍️', leg:{mode:'🚌 Bus', dur:'~2h'}},
+  {city:'Colombo', note:'Evening departure flight home', icon:'✈️', cls:'final', leg:{mode:'✈️ Flight', dur:'~3h 40m direct'}}
+];
+
+const days = [
+  { n:1, city:'Krabi (Ao Nang)', mood:'Easy & Sunny', moodColor:'var(--gold)', scene:'cliffs', galleryKey:'krabi', image:'assets/images/timeline/day-01-krabi.jpg',
+    highlight:'First look at limestone cliffs from the plane window — the trip officially begins.',
+    periods:[
+      {icon:'fa-plane-arrival',label:'Morning',items:['Arrive in Krabi Airport','Grab to Ao Nang (30–40 min)']},
+      {icon:'fa-sun',label:'Afternoon',items:['Hotel check-in','Lunch','Relax by the pool / beach']},
+      {icon:'fa-cloud-sun',label:'Evening',items:['Ao Nang Beach walk','Ao Nang Night Market','Fresh seafood dinner']},
+      {icon:'fa-moon',label:'Night',items:['Beach walk under the stars']} ],
+    transport:'Grab', hotel:'Ao Nang', cost:'$70 pp', walk:2 },
+  { n:2, city:'Phi Phi Islands', mood:'Bucket-List High', moodColor:'var(--coral)', scene:'lagoon', galleryKey:'phi-phi', image:'assets/images/timeline/day-02-phi-phi.jpg',
+    highlight:'Swimming in Pileh Lagoon — water so clear it barely looks real.',
+    periods:[
+      {icon:'fa-water',label:'Morning',items:['Speedboat pickup','Maya Bay','Pileh Lagoon','Viking Cave']},
+      {icon:'fa-sun',label:'Afternoon',items:['Monkey Beach','Snorkeling stop','Buffet lunch on board']},
+      {icon:'fa-cloud-sun',label:'Evening',items:['Return to Ao Nang','Traditional Thai massage','Dinner']},
+      {icon:'fa-moon',label:'Night',items:['Early rest — big day']} ],
+    transport:'Speedboat', hotel:'Ao Nang', cost:'$95 pp', walk:3 },
+  { n:3, city:'Railay Beach', mood:'Scenic & Slow', moodColor:'var(--teal-500)', scene:'cliffs', galleryKey:'railay', image:'assets/images/timeline/day-03-railay.jpg',
+    highlight:'Watching the sunset from Railay before the overnight leg to Bangkok.',
+    periods:[
+      {icon:'fa-ship',label:'Morning',items:['Long-tail boat to Railay','Railay Beach','Phra Nang Beach','Princess Cave']},
+      {icon:'fa-utensils',label:'Afternoon',items:['Lunch on Railay','Relax on the beach']},
+      {icon:'fa-cloud-sun',label:'Evening',items:['Sunset viewing','Return to Ao Nang','Dinner']},
+      {icon:'fa-bus',label:'Night Transport',items:['VIP overnight bus OR domestic flight','Krabi → Bangkok']} ],
+    transport:'Long-tail boat + Overnight Bus/Flight', hotel:'En route', cost:'$60 pp', walk:2 },
+  { n:4, city:'Bangkok', mood:'Big City Energy', moodColor:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/timeline/day-04-bangkok.jpg',
+    highlight:'Dinner cruise down the Chao Phraya as the city lights flicker on.',
+    periods:[
+      {icon:'fa-hotel',label:'Morning',items:['Arrive Bangkok','Hotel check-in','Rest & freshen up']},
+      {icon:'fa-bowl-food',label:'Afternoon',items:['Chinatown (Yaowarat)','Street food crawl']},
+      {icon:'fa-ship',label:'Evening',items:['Chao Phraya dinner cruise']},
+      {icon:'fa-moon',label:'Night',items:['Riverside city lights, early night']} ],
+    transport:'Grab + BTS', hotel:'Bangkok', cost:'$110 pp', walk:3 },
+  { n:5, city:'Pattaya', mood:'Loud & Fun', moodColor:'var(--coral)', scene:'neon', galleryKey:'pattaya', image:'assets/images/timeline/day-05-pattaya.jpg',
+    highlight:'Walking Street after dark — the loudest, most alive two hours of the trip.',
+    periods:[
+      {icon:'fa-bus',label:'Morning',items:['Bus: Bangkok → Pattaya']},
+      {icon:'fa-landmark',label:'Afternoon',items:['Sanctuary of Truth','Pattaya Beach']},
+      {icon:'fa-music',label:'Evening',items:['Walking Street','Live music bars','Nightlife']},
+      {icon:'fa-moon',label:'Night',items:['Late one — sleep in tomorrow']} ],
+    transport:'Coach Bus', hotel:'Pattaya', cost:'$100 pp', walk:4 },
+  { n:6, city:'Bangkok', mood:'Shop & Unwind', moodColor:'var(--teal-500)', scene:'skyline', galleryKey:'bangkok', image:'assets/images/timeline/day-06-bangkok-shopping.jpg',
+    highlight:'Rooftop dinner with the whole Bangkok skyline lit up below you.',
+    periods:[
+      {icon:'fa-bus',label:'Morning',items:['Return to Bangkok']},
+      {icon:'fa-bag-shopping',label:'Afternoon',items:['MBK Center','Siam Center','Siam Paragon','CentralWorld','IconSiam (optional)']},
+      {icon:'fa-spa',label:'Evening',items:['Thai massage','Rooftop dinner']},
+      {icon:'fa-moon',label:'Night',items:['City views, last full night']} ],
+    transport:'Grab + BTS', hotel:'Bangkok', cost:'$130 pp', walk:3 },
+  { n:7, city:'Departure', mood:'Bittersweet', moodColor:'var(--ink-soft)', scene:'airport', galleryKey:'departure', image:'assets/images/timeline/day-07-departure.jpg',
+    highlight:'One last Thai iced coffee before heading to the airport.',
+    periods:[
+      {icon:'fa-mug-hot',label:'Morning',items:['Breakfast','Coffee','Relax']},
+      {icon:'fa-plane-departure',label:'Afternoon → Evening',items:['Head to airport','Evening flight home']} ],
+    transport:'Grab to Airport', hotel:'—', cost:'$20 pp', walk:1 }
+];
+
+const transportModes = [
+  {icon:'fa-plane', title:'Domestic & Intl. Flights', text:'Bangkok Airways / Thai Lion Air connect Krabi and Bangkok in ~1hr — faster than the overnight bus if the timing works for you.'},
+  {icon:'fa-car', title:'Grab', text:'The default for short hops in Ao Nang, Bangkok and Pattaya. Fixed upfront pricing, no haggling, cashless option.'},
+  {icon:'fa-train-subway', title:'BTS Skytrain', text:'Bangkok\'s elevated rail beats traffic entirely — best for Siam, Sukhumvit and Chinatown-adjacent stops.'},
+  {icon:'fa-ship', title:'Speedboats & Long-tails', text:'Speedboats for the Phi Phi day trip, traditional long-tail boats for Railay — both leave from Ao Nang pier.'},
+  {icon:'fa-bus', title:'VIP Overnight Bus', text:'A budget-friendly way to cover Krabi → Bangkok while you sleep. Reclining seats, blanket, onboard snacks.'},
+  {icon:'fa-bus-simple', title:'Coach Bus (Bkk–Pattaya)', text:'Frequent, comfortable coaches from Ekkamai or Mo Chit — about 2 hours door to door.'},
+  {icon:'fa-taxi', title:'Metered Taxi', text:'Fine for late-night rides when Grab surges — just confirm the meter is running before you set off.'},
+  {icon:'fa-motorcycle', title:'Motorbike Taxi', text:'The fastest way through Bangkok gridlock for solo short hops — look for the numbered vests.'}
+];
+
+const hotels = [
+  { area:'Krabi', name:'Ao Nang Beachfront', price:'$45–90 / night', scene:'beachtown', image:'assets/images/hotels/krabi-ao-nang.jpg',
+    pros:['2-minute walk to Ao Nang Beach','Easy pier access for island tours','Rooftop pools with cliff views'] },
+  { area:'Bangkok', name:'Sukhumvit District', price:'$55–120 / night', scene:'skyline', image:'assets/images/hotels/bangkok-sukhumvit.jpg',
+    pros:['Direct BTS access','Best nightlife & dining density','Close to Chinatown & river piers'] },
+  { area:'Bangkok', name:'Siam District', price:'$60–140 / night', scene:'temple', image:'assets/images/hotels/bangkok-siam.jpg',
+    pros:['Walk to Siam Paragon & CentralWorld','Central for both BTS lines','Rooftop dinner options nearby'] },
+  { area:'Pattaya', name:'Walking Street Area', price:'$35–80 / night', scene:'neon', image:'assets/images/hotels/pattaya-walking-street.jpg',
+    pros:['Steps from the nightlife strip','Beachfront breakfast views','Easy bus access back to Bangkok'] }
+];
+
+const foods = [
+  {name:'Pad Thai', scene:'dish1', image:'assets/images/food/pad-thai.jpg', note:'Stir-fried rice noodles, the national dish'},
+  {name:'Tom Yum', scene:'dish3', image:'assets/images/food/tom-yum.jpg', note:'Hot & sour soup, usually with shrimp'},
+  {name:'Mango Sticky Rice', scene:'dish2', image:'assets/images/food/mango-sticky-rice.jpg', note:'Coconut-sweet, seasonal & essential'},
+  {name:'Khao Soi', scene:'dish1', image:'assets/images/food/khao-soi.jpg', note:'Northern curry noodle soup'},
+  {name:'Thai Milk Tea', scene:'dish2', image:'assets/images/food/thai-milk-tea.jpg', note:'Sweet, orange, over ice'},
+  {name:'Fresh Seafood', scene:'dish3', image:'assets/images/food/seafood.jpg', note:'Grilled on the beach in Ao Nang'},
+  {name:'Night Market Snacks', scene:'dish1', image:'assets/images/food/night-market.jpg', note:'Skewers, roti, endless grazing'},
+];
+
+const budget = [
+  {name:'Flights', icon:'fa-plane', amount:1600},
+  {name:'Hotels (6 nights)', icon:'fa-bed', amount:900},
+  {name:'Food', icon:'fa-utensils', amount:560},
+  {name:'In-country Transport', icon:'fa-van-shuttle', amount:320},
+  {name:'Tours & Activities', icon:'fa-water', amount:480},
+  {name:'Shopping', icon:'fa-bag-shopping', amount:400},
+  {name:'Emergency Buffer', icon:'fa-shield-heart', amount:250},
+];
+
+const tips = [
+  {icon:'fa-car-side', title:'Grab vs. Taxi', text:'Grab shows the price upfront and needs no haggling. Metered taxis are fine at night when Grab surges — just insist on the meter.'},
+  {icon:'fa-hands-praying', title:'Thai Etiquette', text:'A wai (slight bow, palms together) is the standard greeting. Avoid touching heads, and never point your feet at people or Buddha images.'},
+  {icon:'fa-person-dress', title:'Temple Dress Code', text:'Shoulders and knees covered at every temple — bring a light scarf or sarong to wrap on if needed.'},
+  {icon:'fa-coins', title:'Currency', text:'Thai Baht (THB) is king — carry small notes for markets and street food, cards work fine in malls and hotels.'},
+  {icon:'fa-phone', title:'Emergency Number', text:'Dial 1155 for the Tourist Police, or 191 for general emergencies, anywhere in Thailand.'},
+  {icon:'fa-wifi', title:'Internet', text:'Grab an eSIM before you land (AIS or dtac) — cheap, instant, and skips the airport SIM queue entirely.'},
+  {icon:'fa-money-bill-transfer', title:'ATMs', text:'Widely available, but most charge a ~220 THB foreign transaction fee — withdraw larger amounts less often.'},
+  {icon:'fa-clock', title:'Best Times to Visit', text:'Hit major temples and Maya Bay right at opening — both are dramatically quieter (and cooler) before 9am.'},
+  {icon:'fa-triangle-exclamation', title:'Scam Avoidance', text:'Politely ignore anyone claiming an attraction is "closed today" and offering an alternative tour — it\'s a classic redirect scam.'},
+  {icon:'fa-store', title:'Night Market Tips', text:'Prices are often flexible — a friendly smile and a counter-offer at 60–70% of the asking price is completely normal.'},
+];
+
+const packingItems = ['Passport','Power Bank','Universal Adapter','Sunscreen','Hat','Swimwear','Rain Jacket','Medicines','Travel Insurance','Cash','Cards','eSIM'];
+const prepItems = ['Flights booked','Hotels booked','Travel insurance purchased','eSIM / roaming activated','Bank notified of travel','Documents saved offline','Some Baht exchanged','Vaccinations checked','Emergency contacts saved','Itinerary shared with family'];
+
+const memories = [
+  {icon:'fa-sun', text:'Watching sunset over Ao Nang'},
+  {icon:'fa-person-swimming', text:'Swimming in Phi Phi\'s Pileh Lagoon'},
+  {icon:'fa-ship', text:'Dinner cruise on the Chao Phraya'},
+  {icon:'fa-street-view', text:'Walking Street\'s electric atmosphere'},
+  {icon:'fa-spa', text:'A proper Thai massage, twice'},
+  {icon:'fa-bag-shopping', text:'Shopping the Siam malls'},
+  {icon:'fa-store', text:'Grazing every night market'},
+  {icon:'fa-users', text:'Four of us, one loop, no regrets'},
+];
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+async function renderApp(){
+  document.body.classList.add('gallery-loading');
+  await ensureGalleryData();
+  document.body.classList.remove('gallery-loading');
+
+  const heroSrc = 'assets/images/hero/thailand-andaman.jpg';
+  document.getElementById('heroScene').innerHTML = photoWrap(heroSrc, 'Thailand Andaman coast', 'cliffs');
+
+const overviewGrid = document.getElementById('overviewGrid');
+destinations.forEach((d,di)=>{
+  const el = document.createElement('div');
+  el.className='dest-card';
+  el.innerHTML = `
+    <div class="dest-media">
+      ${carouselHtml(d.galleryKey, `overview-${di}`)}
+      <span class="dest-badge" style="background:${d.color}">${d.badge}</span>
+    </div>
+    <div class="dest-body">
+      <h3 class="dest-name">${d.name}</h3>
+      <p class="desc">${d.desc}</p>
+      <div class="dest-chips">${d.highlights.map(h=>`<span class="chip">${h}</span>`).join('')}</div>
+      <div class="dest-meta">
+        <div><div class="k">Vibe</div><div class="v">${d.vibe}</div></div>
+        <div><div class="k">Travel Time</div><div class="v">${d.time}</div></div>
+        <div><div class="k">Weather</div><div class="v">${d.weather}</div></div>
+      </div>
+    </div>`;
+  overviewGrid.appendChild(el);
+});
+
+const routeStopsEl = document.getElementById('routeStops');
+routeStops.forEach(s=>{
+  const el = document.createElement('div');
+  el.className = `route-stop ${s.cls||''}`;
+  el.innerHTML = `
+    <div class="route-node">${s.icon}</div>
+    <div class="route-city">${s.city}</div>
+    <div class="route-note">${s.note}</div>
+    ${s.leg ? `<div class="route-leg"><i class="fa-solid fa-arrow-down"></i> ${s.leg.mode} · ${s.leg.dur}</div>` : ''}
+  `;
+  routeStopsEl.appendChild(el);
+});
+
+const routeGalleriesEl = document.getElementById('routeGalleries');
+ROUTE_GALLERY_STOPS.forEach((stop,si)=>{
+  const card = document.createElement('div');
+  card.className = 'route-gallery-card';
+  card.innerHTML = `
+    <h4>${stop.title}</h4>
+    <p class="route-gallery-sub">${stop.sub}</p>
+    ${carouselHtml(stop.key, `route-${si}`)}
+  `;
+  routeGalleriesEl.appendChild(card);
+});
+
+const dayRows = document.getElementById('dayRows');
+days.forEach((d,i)=>{
+  const row = document.createElement('div');
+  row.className = `day-row reveal ${i%2? 'flip':''}`;
+  row.innerHTML = `
+    <div class="day-media day-card">
+      ${carouselHtml(d.galleryKey, `day-${d.n}`)}
+      <span class="day-mood" style="background:${d.moodColor};color:#fff;"><i class="fa-solid fa-face-smile"></i> ${d.mood}</span>
+    </div>
+    <div class="day-marker"><div class="num"><small>DAY</small><b>0${d.n}</b></div></div>
+    <div class="day-copy day-card">
+      <div class="city-tag"><i class="fa-solid fa-location-dot"></i> ${d.city}</div>
+      <h3>Day ${d.n} — ${d.city}</h3>
+      <div class="day-highlight"><i class="fa-solid fa-star"></i><span>${d.highlight}</span></div>
+      <div class="day-periods">
+        ${d.periods.map(p=>`
+          <div class="day-period">
+            <div class="p-icon"><i class="fa-solid ${p.icon}"></i></div>
+            <div class="p-body">
+              <div class="p-label">${p.label}</div>
+              <ul>${p.items.map(it=>`<li>${it}</li>`).join('')}</ul>
+            </div>
+          </div>`).join('')}
+      </div>
+      <div class="day-facts">
+        <div class="day-fact"><div class="k">Transport</div><div class="v">${d.transport}</div></div>
+        <div class="day-fact"><div class="k">Stay</div><div class="v">${d.hotel}</div></div>
+        <div class="day-fact"><div class="k">Est. Cost</div><div class="v">${d.cost}</div></div>
+        <div class="day-fact"><div class="k">Walking Level</div><div class="walk-dots">${[1,2,3,4].map(n=>`<i class="${n<=d.walk?'on':''}"></i>`).join('')}</div></div>
+      </div>
+    </div>
+  `;
+  dayRows.appendChild(row);
+});
+
+const transportGrid = document.getElementById('transportGrid');
+transportModes.forEach(t=>{
+  const el = document.createElement('div');
+  el.className='transport-card';
+  el.innerHTML = `<div class="ic"><i class="fa-solid ${t.icon}"></i></div><h4>${t.title}</h4><p>${t.text}</p>`;
+  transportGrid.appendChild(el);
+});
+
+const hotelGrid = document.getElementById('hotelGrid');
+hotels.forEach(h=>{
+  const el = document.createElement('div');
+  el.className='hotel-card';
+  const q = encodeURIComponent(h.name+' '+h.area+' Thailand');
+  el.innerHTML = `
+    <div class="hotel-media">
+      ${photoWrap(h.image, h.name + ' — ' + h.area, h.scene)}
+      <span class="hotel-price">${h.price}</span>
+    </div>
+    <div class="hotel-body">
+      <div class="area">${h.area}</div>
+      <h4>${h.name}</h4>
+      <ul class="hotel-pros">${h.pros.map(p=>`<li><i class="fa-solid fa-check"></i>${p}</li>`).join('')}</ul>
+      <div class="hotel-actions">
+        <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${q}"><i class="fa-solid fa-map-location-dot"></i> Map</a>
+        <a class="btn btn-primary btn-sm" href="#" onclick="return false;"><i class="fa-regular fa-calendar-check"></i> Enquire</a>
+      </div>
+    </div>`;
+  hotelGrid.appendChild(el);
+});
+
+const foodGrid = document.getElementById('foodGrid');
+foods.forEach(f=>{
+  const el = document.createElement('div');
+  el.className='food-card';
+  el.innerHTML = `${photoWrap(f.image, f.name, f.scene)}<div class="food-info"><h4>${f.name}</h4><p>${f.note}</p></div>`;
+  foodGrid.appendChild(el);
+});
+
+const budgetBars = document.getElementById('budgetBars');
+const total = budget.reduce((a,b)=>a+b.amount,0);
+const max = Math.max(...budget.map(b=>b.amount));
+budget.forEach(b=>{
+  const el = document.createElement('div');
+  el.className='budget-row';
+  el.innerHTML = `
+    <div class="top"><div class="name"><i class="fa-solid ${b.icon}"></i> ${b.name}</div><div class="amt">$${b.amount.toLocaleString()}</div></div>
+    <div class="bar-track"><div class="bar-fill" data-target="${(b.amount/max*100).toFixed(1)}"></div></div>`;
+  budgetBars.appendChild(el);
+});
+document.getElementById('budgetBig').textContent = `$${total.toLocaleString()}`;
+document.getElementById('budgetPP').textContent = `≈ $${Math.round(total/4).toLocaleString()} per person`;
+document.getElementById('budgetList').innerHTML = budget.map(b=>`<li><span>${b.name}</span><span>$${b.amount.toLocaleString()}</span></li>`).join('');
+
+const tipsGrid = document.getElementById('tipsGrid');
+tips.forEach(t=>{
+  const el = document.createElement('div');
+  el.className='tip-item';
+  el.innerHTML = `<div class="ic"><i class="fa-solid ${t.icon}"></i></div><div><h5>${t.title}</h5><p>${t.text}</p></div>`;
+  tipsGrid.appendChild(el);
+});
+
+function buildChecklist(items, listEl, statusEl, barEl, statusWord){
+  const state = new Array(items.length).fill(false);
+  items.forEach((label,i)=>{
+    const el = document.createElement('div');
+    el.className='check-item';
+    el.innerHTML = `<div class="check-box"><i class="fa-solid fa-check"></i></div><div class="label">${label}</div><i class="fa-solid fa-grip-lines ic2"></i>`;
+    el.addEventListener('click', ()=>{
+      state[i] = !state[i];
+      el.classList.toggle('checked', state[i]);
+      const done = state.filter(Boolean).length;
+      statusEl.textContent = `${done} / ${items.length} ${statusWord}`;
+      barEl.style.width = `${(done/items.length*100).toFixed(0)}%`;
+    });
+    listEl.appendChild(el);
+  });
+  statusEl.textContent = `0 / ${items.length} ${statusWord}`;
+}
+buildChecklist(packingItems, document.getElementById('packList'), document.getElementById('packStatus'), document.getElementById('packBar'), 'items');
+buildChecklist(prepItems, document.getElementById('prepList'), document.getElementById('prepStatus'), document.getElementById('prepBar'), 'ready');
+
+const memGrid = document.getElementById('memGrid');
+memories.forEach(m=>{
+  const el = document.createElement('div');
+  el.className='mem-item';
+  el.innerHTML = `<div class="stamp"><i class="fa-solid ${m.icon}"></i></div><p>${m.text}</p>`;
+  memGrid.appendChild(el);
+});
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:.14, rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>revealObserver.observe(el));
+
+const budgetObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.querySelectorAll('.bar-fill[data-target]').forEach(bar=>{ bar.style.width = bar.dataset.target + '%'; });
+      budgetObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:.2});
+budgetObserver.observe(document.getElementById('budgetBars'));
+
+const routeObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      document.getElementById('routeFill').style.height='100%';
+      routeObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:.15});
+routeObserver.observe(document.getElementById('routeTrack'));
+
+const spineFill = document.getElementById('spineFill');
+const timelineTrack = document.getElementById('timelineTrack');
+function updateSpine(){
+  const rect = timelineTrack.getBoundingClientRect();
+  const vh = window.innerHeight;
+  const total = rect.height;
+  let progressed = (vh*0.7) - rect.top;
+  progressed = Math.max(0, Math.min(total, progressed));
+  spineFill.style.height = (total>0 ? (progressed/total*100) : 0) + '%';
+}
+window.addEventListener('scroll', updateSpine, {passive:true});
+updateSpine();
+
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = [...navLinks].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const navProgress = document.getElementById('navProgress');
+
+function onScroll(){
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  navProgress.style.width = (scrollHeight>0 ? (scrollTop/scrollHeight*100) : 0) + '%';
+  let currentIndex = 0;
+  sections.forEach((sec,i)=>{ if(sec.getBoundingClientRect().top - 140 <= 0) currentIndex = i; });
+  navLinks.forEach((a,i)=>a.classList.toggle('active', i===currentIndex));
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+navLinks.forEach(a=>{
+  a.addEventListener('click', e=>{
+    const target = document.querySelector(a.getAttribute('href'));
+    if(!target) return;
+    e.preventDefault();
+    const y = target.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({top:y, behavior:'smooth'});
+  });
+});
+
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!prefersReduced && window.innerWidth > 720){
+  const heroScene = document.getElementById('heroScene');
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY;
+    if(y < window.innerHeight){ heroScene.style.transform = `translateY(${y*0.18}px)`; }
+  }, {passive:true});
+}
+
+initCarousels(document);
+}
+
+renderApp();
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "bangkok": [
+    {
+      "src": "assets/images/galleries/bangkok/01-golden-temple.jpg",
+      "caption": "Golden temple"
+    },
+    {
+      "src": "assets/images/galleries/bangkok/02-street-food.jpg",
+      "caption": "Chinatown street food"
+    },
+    {
+      "src": "assets/images/galleries/bangkok/03-river-cruise.jpg",
+      "caption": "River cruise"
+    },
+    {
+      "src": "assets/images/galleries/bangkok/04-shopping-mall.jpg",
+      "caption": "Shopping district"
+    },
+    {
+      "src": "assets/images/galleries/bangkok/05-city-skyline.jpg",
+      "caption": "City skyline"
+    },
+    {
+      "src": "assets/images/galleries/bangkok/06-rooftop-bar.jpg",
+      "caption": "Rooftop bar"
+    }
+  ],
+  "departure": [
+    {
+      "src": "assets/images/galleries/departure/01-airport-departure.jpg",
+      "caption": "Airport departure"
+    },
+    {
+      "src": "assets/images/galleries/departure/02-last-coffee.jpg",
+      "caption": "Last coffee"
+    },
+    {
+      "src": "assets/images/galleries/departure/03-final-view.jpg",
+      "caption": "Final view"
+    }
+  ],
+  "krabi": [
+    {
+      "src": "assets/images/galleries/krabi/01-ao-nang-beach.jpg",
+      "caption": "Ao Nang Beach"
+    },
+    {
+      "src": "assets/images/galleries/krabi/02-limestone-cliffs.jpg",
+      "caption": "Limestone cliffs"
+    },
+    {
+      "src": "assets/images/galleries/krabi/03-longtail-boats.jpg",
+      "caption": "Long-tail boats"
+    },
+    {
+      "src": "assets/images/galleries/krabi/04-beach-seafood.jpg",
+      "caption": "Beach seafood"
+    },
+    {
+      "src": "assets/images/galleries/krabi/05-night-market.jpg",
+      "caption": "Night market"
+    },
+    {
+      "src": "assets/images/galleries/krabi/06-resort-pool.jpg",
+      "caption": "Resort & pool view"
+    }
+  ],
+  "pattaya": [
+    {
+      "src": "assets/images/galleries/pattaya/01-pattaya-beach.jpg",
+      "caption": "Pattaya Beach"
+    },
+    {
+      "src": "assets/images/galleries/pattaya/02-sanctuary-of-truth.jpg",
+      "caption": "Sanctuary of Truth"
+    },
+    {
+      "src": "assets/images/galleries/pattaya/03-walking-street.jpg",
+      "caption": "Walking Street"
+    },
+    {
+      "src": "assets/images/galleries/pattaya/04-nightlife.jpg",
+      "caption": "Nightlife"
+    }
+  ],
+  "phi-phi": [
+    {
+      "src": "assets/images/galleries/phi-phi/01-maya-bay.jpg",
+      "caption": "Maya Bay"
+    },
+    {
+      "src": "assets/images/galleries/phi-phi/02-pileh-lagoon.jpg",
+      "caption": "Pileh Lagoon"
+    },
+    {
+      "src": "assets/images/galleries/phi-phi/03-speedboat-tour.jpg",
+      "caption": "Speedboat tour"
+    },
+    {
+      "src": "assets/images/galleries/phi-phi/04-snorkeling.jpg",
+      "caption": "Snorkeling"
+    },
+    {
+      "src": "assets/images/galleries/phi-phi/05-monkey-beach.jpg",
+      "caption": "Monkey Beach"
+    }
+  ],
+  "railay": [
+    {
+      "src": "assets/images/galleries/railay/01-railay-beach.jpg",
+      "caption": "Railay Beach"
+    },
+    {
+      "src": "assets/images/galleries/railay/02-phra-nang-beach.jpg",
+      "caption": "Phra Nang Beach"
+    },
+    {
+      "src": "assets/images/galleries/railay/03-sunset-railay.jpg",
+      "caption": "Sunset at Railay"
+    }
+  ]
+}
