@@ -415,8 +415,8 @@ footer{background:var(--ink); color:var(--paper); position:relative; padding-top
     <p class="hero-sub">6 Days <span class="sep"></span> Krabi <span class="sep"></span> Phi Phi <span class="sep"></span> Bangkok <span class="sep"></span> Pattaya</p>
     <div class="hero-cards glass" style="border-radius:28px;">
       <div class="hero-card"><div class="k"><i class="fa-regular fa-calendar"></i> Duration</div><div class="v">6 Days</div></div>
-      <div class="hero-card"><div class="k"><i class="fa-solid fa-sack-dollar"></i> Budget</div><div class="v">~$4,500</div></div>
-      <div class="hero-card"><div class="k"><i class="fa-solid fa-user-group"></i> Travelers</div><div class="v">4 People</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-solid fa-sack-dollar"></i> Budget / person</div><div class="v">LKR 250k</div></div>
+      <div class="hero-card"><div class="k"><i class="fa-solid fa-user-group"></i> Travelers</div><div class="v">Flexible</div></div>
       <div class="hero-card"><div class="k"><i class="fa-regular fa-sun"></i> Best Season</div><div class="v">Nov – Mar</div></div>
     </div>
   </div>
@@ -483,7 +483,7 @@ footer{background:var(--ink); color:var(--paper); position:relative; padding-top
     <div class="section-head reveal">
       <span class="eyebrow">Where to Stay</span>
       <h2>Basecamps for every leg</h2>
-      <p>Three areas, each picked for how they fit the day around them — beach access in Krabi, transit + nightlife balance in Bangkok, strip-side energy in Pattaya.</p>
+      <p>Three areas, each picked for how they fit the day around them — beach access in Krabi, transit + nightlife balance in Bangkok, strip-side energy in Pattaya. Prices are per room / night (LKR), lean mid-range.</p>
     </div>
     <div class="hotel-grid reveal-stagger" id="hotelGrid"></div>
   </div>
@@ -504,15 +504,15 @@ footer{background:var(--ink); color:var(--paper); position:relative; padding-top
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">The Numbers</span>
-      <h2>Budget breakdown, for four</h2>
-      <p>Estimated spend for four travelers — a magazine sketch, not a receipt.</p>
+      <h2>Budget breakdown, per person</h2>
+      <p>Lean mid-range estimate in LKR — multiply by your group size. A magazine sketch, not a receipt.</p>
     </div>
     <div class="budget-wrap">
       <div class="reveal" id="budgetBars"></div>
       <div class="budget-total reveal" id="budgetTotalCard">
-        <span class="eyebrow">Grand Total</span>
-        <div class="big" id="budgetBig">$0</div>
-        <div class="pp" id="budgetPP">≈ $0 per person</div>
+        <span class="eyebrow">Per Person</span>
+        <div class="big" id="budgetBig">LKR 0</div>
+        <div class="pp" id="budgetPP">Multiply by travelers in your group</div>
         <ul id="budgetList"></ul>
       </div>
     </div>
@@ -1041,7 +1041,7 @@ const destinations = [
     highlights:['Maya Bay','Pileh Lagoon','Snorkeling'], vibe:'Bucket-list high', time:'40 min by speedboat', weather:'31°C · Clear' },
   { name:'Bangkok', badge:'Day 3 & 5', color:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/destinations/bangkok.jpg',
     desc:'The capital\'s full sensory overload, in the best way — golden temples by day, Chao Phraya river cruises by night, and shopping malls that swallow whole afternoons.',
-    highlights:['Chinatown street food','River dinner cruise','Siam shopping'], vibe:'Electric & endless', time:'1hr flight from Krabi', weather:'33°C · Humid' },
+    highlights:['Chinatown street food','Riverside dinner','Siam shopping'], vibe:'Electric & endless', time:'Overnight bus from Krabi', weather:'33°C · Humid' },
   { name:'Pattaya', badge:'Day 4', color:'var(--teal-500)', scene:'neon', galleryKey:'pattaya', image:'assets/images/destinations/pattaya.jpg',
     desc:'A day-trip detour for beach clubs by afternoon and Walking Street\'s neon chaos by night — the loud, fun contrast to everywhere else on this trip.',
     highlights:['Sanctuary of Truth','Walking Street','Live music'], vibe:'Loud & fun', time:'2hr bus from Bangkok', weather:'32°C · Sunny' }
@@ -1064,23 +1064,23 @@ const days = [
       {icon:'fa-sun',label:'Afternoon',items:['Hotel check-in','Lunch','Relax by the pool / beach']},
       {icon:'fa-cloud-sun',label:'Evening',items:['Ao Nang Beach walk','Ao Nang Night Market','Fresh seafood dinner']},
       {icon:'fa-moon',label:'Night',items:['Beach walk under the stars']} ],
-    transport:'Grab', hotel:'Ao Nang', cost:'$70 pp', walk:2 },
+    transport:'Grab', hotel:'Ao Nang', cost:'LKR 15k pp', walk:2 },
   { n:2, city:'Phi Phi Islands', mood:'Bucket-List High', moodColor:'var(--coral)', scene:'lagoon', galleryKey:'phi-phi', image:'assets/images/timeline/day-02-phi-phi.jpg',
     highlight:'Swimming in Pileh Lagoon — water so clear it barely looks real.',
     periods:[
       {icon:'fa-water',label:'Morning',items:['Speedboat pickup','Maya Bay','Pileh Lagoon','Viking Cave']},
       {icon:'fa-sun',label:'Afternoon',items:['Monkey Beach','Snorkeling stop','Buffet lunch on board']},
       {icon:'fa-cloud-sun',label:'Evening',items:['Return to Ao Nang','Traditional Thai massage','Dinner']},
-      {icon:'fa-bus',label:'Night Transport',items:['VIP overnight bus OR domestic flight','Krabi → Bangkok']} ],
-    transport:'Speedboat + Overnight Bus/Flight', hotel:'En route', cost:'$95 pp', walk:3 },
+      {icon:'fa-bus',label:'Night Transport',items:['VIP overnight bus','Krabi → Bangkok']} ],
+    transport:'Speedboat + Overnight Bus', hotel:'En route', cost:'LKR 35k pp', walk:3 },
   { n:3, city:'Bangkok', mood:'Big City Energy', moodColor:'var(--gold)', scene:'temple', galleryKey:'bangkok', image:'assets/images/timeline/day-04-bangkok.jpg',
-    highlight:'Dinner cruise down the Chao Phraya as the city lights flicker on.',
+    highlight:'Chinatown street food crawl as the neon comes on along Yaowarat.',
     periods:[
       {icon:'fa-hotel',label:'Morning',items:['Arrive Bangkok','Hotel check-in','Rest & freshen up']},
       {icon:'fa-bowl-food',label:'Afternoon',items:['Chinatown (Yaowarat)','Street food crawl']},
-      {icon:'fa-ship',label:'Evening',items:['Chao Phraya dinner cruise']},
+      {icon:'fa-ship',label:'Evening',items:['Riverside walk','Casual dinner by the Chao Phraya']},
       {icon:'fa-moon',label:'Night',items:['Riverside city lights, early night']} ],
-    transport:'Grab + BTS', hotel:'Bangkok', cost:'$110 pp', walk:3 },
+    transport:'Grab + BTS', hotel:'Bangkok', cost:'LKR 20k pp', walk:3 },
   { n:4, city:'Pattaya', mood:'Loud & Fun', moodColor:'var(--coral)', scene:'neon', galleryKey:'pattaya', image:'assets/images/timeline/day-05-pattaya.jpg',
     highlight:'Walking Street after dark — the loudest, most alive two hours of the trip.',
     periods:[
@@ -1088,7 +1088,7 @@ const days = [
       {icon:'fa-landmark',label:'Afternoon',items:['Sanctuary of Truth','Pattaya Beach']},
       {icon:'fa-music',label:'Evening',items:['Walking Street','Live music bars','Nightlife']},
       {icon:'fa-moon',label:'Night',items:['Late one — sleep in tomorrow']} ],
-    transport:'Coach Bus', hotel:'Pattaya', cost:'$100 pp', walk:4 },
+    transport:'Coach Bus', hotel:'Pattaya', cost:'LKR 22k pp', walk:4 },
   { n:5, city:'Bangkok', mood:'Shop & Unwind', moodColor:'var(--teal-500)', scene:'skyline', galleryKey:'bangkok', image:'assets/images/timeline/day-06-bangkok-shopping.jpg',
     highlight:'Rooftop dinner with the whole Bangkok skyline lit up below you.',
     periods:[
@@ -1096,34 +1096,34 @@ const days = [
       {icon:'fa-bag-shopping',label:'Afternoon',items:['MBK Center','Siam Center','Siam Paragon','CentralWorld','IconSiam (optional)']},
       {icon:'fa-spa',label:'Evening',items:['Thai massage','Rooftop dinner']},
       {icon:'fa-moon',label:'Night',items:['City views, last full night']} ],
-    transport:'Grab + BTS', hotel:'Bangkok', cost:'$130 pp', walk:3 },
+    transport:'Grab + BTS', hotel:'Bangkok', cost:'LKR 18k pp', walk:3 },
   { n:6, city:'Departure', mood:'Bittersweet', moodColor:'var(--ink-soft)', scene:'airport', galleryKey:'departure', image:'assets/images/timeline/day-07-departure.jpg',
     highlight:'One last Thai iced coffee before heading to the airport.',
     periods:[
       {icon:'fa-mug-hot',label:'Morning',items:['Breakfast','Coffee','Relax']},
       {icon:'fa-plane-departure',label:'Afternoon → Evening',items:['Head to airport','Evening flight home']} ],
-    transport:'Grab to Airport', hotel:'—', cost:'$20 pp', walk:1 }
+    transport:'Grab to Airport', hotel:'—', cost:'LKR 8k pp', walk:1 }
 ];
 
 const transportModes = [
-  {icon:'fa-plane', title:'Domestic & Intl. Flights', text:'Bangkok Airways / Thai Lion Air connect Krabi and Bangkok in ~1hr — faster than the overnight bus if the timing works for you.'},
+  {icon:'fa-plane', title:'International Flights', text:'Colombo return is the big ticket in this budget (~LKR 130k pp). A domestic Krabi–Bangkok flight is optional and sits outside the lean land budget.'},
   {icon:'fa-car', title:'Grab', text:'The default for short hops in Ao Nang, Bangkok and Pattaya. Fixed upfront pricing, no haggling, cashless option.'},
   {icon:'fa-train-subway', title:'BTS Skytrain', text:'Bangkok\'s elevated rail beats traffic entirely — best for Siam, Sukhumvit and Chinatown-adjacent stops.'},
   {icon:'fa-ship', title:'Speedboats', text:'Speedboats for the Phi Phi day trip leave from Ao Nang pier — Maya Bay, Pileh Lagoon, and snorkeling in one full day on the water.'},
-  {icon:'fa-bus', title:'VIP Overnight Bus', text:'A budget-friendly way to cover Krabi → Bangkok while you sleep. Reclining seats, blanket, onboard snacks.'},
+  {icon:'fa-bus', title:'VIP Overnight Bus', text:'The lean way to cover Krabi → Bangkok while you sleep — reclining seats, blanket, onboard snacks. Keeps land costs inside the LKR 250k pp target.'},
   {icon:'fa-bus-simple', title:'Coach Bus (Bkk–Pattaya)', text:'Frequent, comfortable coaches from Ekkamai or Mo Chit — about 2 hours door to door.'},
   {icon:'fa-taxi', title:'Metered Taxi', text:'Fine for late-night rides when Grab surges — just confirm the meter is running before you set off.'},
   {icon:'fa-motorcycle', title:'Motorbike Taxi', text:'The fastest way through Bangkok gridlock for solo short hops — look for the numbered vests.'}
 ];
 
 const hotels = [
-  { area:'Krabi', name:'Ao Nang Beachfront', price:'$45–90 / night', scene:'beachtown', image:'assets/images/hotels/krabi-ao-nang.jpg',
+  { area:'Krabi', name:'Ao Nang Beachfront', price:'LKR 12,000–18,000 / night', scene:'beachtown', image:'assets/images/hotels/krabi-ao-nang.jpg',
     pros:['2-minute walk to Ao Nang Beach','Easy pier access for island tours','Rooftop pools with cliff views'] },
-  { area:'Bangkok', name:'Sukhumvit District', price:'$55–120 / night', scene:'skyline', image:'assets/images/hotels/bangkok-sukhumvit.jpg',
+  { area:'Bangkok', name:'Sukhumvit District', price:'LKR 15,000–22,000 / night', scene:'skyline', image:'assets/images/hotels/bangkok-sukhumvit.jpg',
     pros:['Direct BTS access','Best nightlife & dining density','Close to Chinatown & river piers'] },
-  { area:'Bangkok', name:'Siam District', price:'$60–140 / night', scene:'temple', image:'assets/images/hotels/bangkok-siam.jpg',
+  { area:'Bangkok', name:'Siam District', price:'LKR 15,000–22,000 / night', scene:'temple', image:'assets/images/hotels/bangkok-siam.jpg',
     pros:['Walk to Siam Paragon & CentralWorld','Central for both BTS lines','Rooftop dinner options nearby'] },
-  { area:'Pattaya', name:'Walking Street Area', price:'$35–80 / night', scene:'neon', image:'assets/images/hotels/pattaya-walking-street.jpg',
+  { area:'Pattaya', name:'Walking Street Area', price:'LKR 12,000–18,000 / night', scene:'neon', image:'assets/images/hotels/pattaya-walking-street.jpg',
     pros:['Steps from the nightlife strip','Beachfront breakfast views','Easy bus access back to Bangkok'] }
 ];
 
@@ -1138,20 +1138,20 @@ const foods = [
 ];
 
 const budget = [
-  {name:'Flights', icon:'fa-plane', amount:1600},
-  {name:'Hotels (6 nights)', icon:'fa-bed', amount:900},
-  {name:'Food', icon:'fa-utensils', amount:560},
-  {name:'In-country Transport', icon:'fa-van-shuttle', amount:320},
-  {name:'Tours & Activities', icon:'fa-water', amount:480},
-  {name:'Shopping', icon:'fa-bag-shopping', amount:400},
-  {name:'Emergency Buffer', icon:'fa-shield-heart', amount:250},
+  {name:'Flights', icon:'fa-plane', amount:130000},
+  {name:'Hotels (4 nights)', icon:'fa-bed', amount:30000},
+  {name:'Food', icon:'fa-utensils', amount:35000},
+  {name:'In-country Transport', icon:'fa-van-shuttle', amount:17500},
+  {name:'Tours & Activities', icon:'fa-water', amount:22500},
+  {name:'Shopping', icon:'fa-bag-shopping', amount:7500},
+  {name:'Emergency Buffer', icon:'fa-shield-heart', amount:7500},
 ];
 
 const tips = [
   {icon:'fa-car-side', title:'Grab vs. Taxi', text:'Grab shows the price upfront and needs no haggling. Metered taxis are fine at night when Grab surges — just insist on the meter.'},
   {icon:'fa-hands-praying', title:'Thai Etiquette', text:'A wai (slight bow, palms together) is the standard greeting. Avoid touching heads, and never point your feet at people or Buddha images.'},
   {icon:'fa-person-dress', title:'Temple Dress Code', text:'Shoulders and knees covered at every temple — bring a light scarf or sarong to wrap on if needed.'},
-  {icon:'fa-coins', title:'Currency', text:'Thai Baht (THB) is king — carry small notes for markets and street food, cards work fine in malls and hotels.'},
+  {icon:'fa-coins', title:'Currency', text:'Plan the trip in LKR (~250k pp all-in); spend on the ground in Thai Baht. Carry small THB notes for markets and street food — cards work fine in malls and hotels. Overnight VIP bus (not a domestic flight) is what keeps land costs lean.'},
   {icon:'fa-phone', title:'Emergency Number', text:'Dial 1155 for the Tourist Police, or 191 for general emergencies, anywhere in Thailand.'},
   {icon:'fa-wifi', title:'Internet', text:'Grab an eSIM before you land (AIS or dtac) — cheap, instant, and skips the airport SIM queue entirely.'},
   {icon:'fa-money-bill-transfer', title:'ATMs', text:'Widely available, but most charge a ~220 THB foreign transaction fee — withdraw larger amounts less often.'},
@@ -1305,6 +1305,10 @@ foods.forEach(f=>{
   foodGrid.appendChild(el);
 });
 
+function fmtLkr(n){
+  return `LKR ${Number(n).toLocaleString()}`;
+}
+
 const budgetBars = document.getElementById('budgetBars');
 const total = budget.reduce((a,b)=>a+b.amount,0);
 const max = Math.max(...budget.map(b=>b.amount));
@@ -1312,13 +1316,13 @@ budget.forEach(b=>{
   const el = document.createElement('div');
   el.className='budget-row';
   el.innerHTML = `
-    <div class="top"><div class="name"><i class="fa-solid ${b.icon}"></i> ${b.name}</div><div class="amt">$${b.amount.toLocaleString()}</div></div>
+    <div class="top"><div class="name"><i class="fa-solid ${b.icon}"></i> ${b.name}</div><div class="amt">${fmtLkr(b.amount)}</div></div>
     <div class="bar-track"><div class="bar-fill" data-target="${(b.amount/max*100).toFixed(1)}"></div></div>`;
   budgetBars.appendChild(el);
 });
-document.getElementById('budgetBig').textContent = `$${total.toLocaleString()}`;
-document.getElementById('budgetPP').textContent = `≈ $${Math.round(total/4).toLocaleString()} per person`;
-document.getElementById('budgetList').innerHTML = budget.map(b=>`<li><span>${b.name}</span><span>$${b.amount.toLocaleString()}</span></li>`).join('');
+document.getElementById('budgetBig').textContent = fmtLkr(total);
+document.getElementById('budgetPP').textContent = 'Multiply by travelers in your group';
+document.getElementById('budgetList').innerHTML = budget.map(b=>`<li><span>${b.name}</span><span>${fmtLkr(b.amount)}</span></li>`).join('');
 
 const tipsGrid = document.getElementById('tipsGrid');
 tips.forEach(t=>{
